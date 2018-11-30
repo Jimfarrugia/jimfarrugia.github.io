@@ -1,1 +1,75 @@
+@import "./materialize";
 
+// Vars
+$header-bg: url(../img/pattern.png);
+$header-height: 300px;
+$body-bg: $secondary-color;
+
+// Text Color Function # (Set text color based on the background color)
+@function set-text-color($background) {
+  @if (lightness($background) > 55) {
+    @return #000;
+  } @else {
+    @return #fafafa;
+  }
+}
+
+body {
+  background: $body-bg;
+  color: set-text-color($body-bg);
+}
+.row-1,
+.row-2,
+.row-3 {
+  opacity: 0;
+}
+.main-header {
+  background: $header-bg;
+  color: #fafafa;
+  height: $header-height;
+  margin-bottom: 30px;
+
+  h1 {
+    margin: 0;
+    padding-top: 30px;
+  }
+}
+
+.img-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+}
+
+.card-content {
+  color: $primary-color;
+}
+
+.modal {
+  overflow: show;
+  background: #fafafa;
+  color: set-text-color(#fafafa);
+}
+
+.page-footer {
+  background: $primary-color;
+  color: set-text-color($primary-color);
+
+  a,
+  a:visited {
+    color: $primary-gray-light;
+  }
+  a:active,
+  a:hover {
+    color: $secondary-color;
+  }
+  .footer-copyright {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+    a:active,
+    a:hover {
+      color: $primary-color;
+    }
+  }
+}
