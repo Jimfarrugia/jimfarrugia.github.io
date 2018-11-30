@@ -4,6 +4,8 @@
 $header-bg: url(../img/pattern.png);
 $header-height: 300px;
 $body-bg: $secondary-color;
+$mono: "Roboto Mono", monospace;
+$sanserif: "Roboto", sans-serif;
 
 // Text Color Function # (Set text color based on the background color)
 @function set-text-color($background) {
@@ -17,6 +19,7 @@ $body-bg: $secondary-color;
 body {
   background: $body-bg;
   color: set-text-color($body-bg);
+  font-family: $mono;
 }
 .row-1,
 .row-2,
@@ -26,15 +29,26 @@ body {
 .main-header {
   background: $header-bg;
   color: #fafafa;
-  height: $header-height;
+  padding-bottom: 30px;
   margin-bottom: 30px;
-
+  font-family: $mono;
+  #logo {
+    padding-top: 30px;
+  }
+  #logo a {
+    display: block;
+    width: 360px;
+    height: 126px;
+    margin: 0 auto;
+  }
   h1 {
     margin: 0;
     padding-top: 30px;
   }
 }
-
+.section-main {
+  font-family: "Roboto";
+}
 .img-content {
   display: flex;
   flex-direction: column;

@@ -6837,7 +6837,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 body {
   background: #0069c0;
-  color: #fafafa; }
+  color: #fafafa;
+  font-family: "Roboto Mono", monospace; }
 
 .row-1,
 .row-2,
@@ -6847,11 +6848,22 @@ body {
 .main-header {
   background: url(../img/pattern.png);
   color: #fafafa;
-  height: 300px;
-  margin-bottom: 30px; }
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  font-family: "Roboto Mono", monospace; }
+  .main-header #logo {
+    padding-top: 30px; }
+  .main-header #logo a {
+    display: block;
+    width: 360px;
+    height: 126px;
+    margin: 0 auto; }
   .main-header h1 {
     margin: 0;
     padding-top: 30px; }
+
+.section-main {
+  font-family: "Roboto"; }
 
 .img-content {
   display: flex;
