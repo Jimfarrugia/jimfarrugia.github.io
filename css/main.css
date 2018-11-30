@@ -6840,12 +6840,20 @@ body {
   color: #fafafa;
   font-family: "Roboto Mono", monospace; }
 
+.btn-floating .material-icons {
+  color: rgba(0, 0, 0, 0.87); }
+
 nav .button-collapse {
   background: #ffeb3b;
   color: rgba(0, 0, 0, 0.87);
   padding: 0 20px;
   margin: 0;
-  border-radius: 50%; }
+  transition: ease 0.3s;
+  border-radius: 0 0 3px 3px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px; }
+  nav .button-collapse:hover {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 5px;
+    color: rgba(0, 0, 0, 0.5); }
 
 .navbar-fixed ul {
   background: #ffeb3b;
@@ -6886,8 +6894,11 @@ nav .button-collapse {
   justify-content: center;
   height: 300px; }
 
+.card-title {
+  background: rgba(0, 0, 0, 0.4); }
+
 .card-content {
-  color: #0069c0; }
+  color: rgba(0, 0, 0, 0.87); }
 
 .card-image .btn-floating .material-icons {
   color: rgba(0, 0, 0, 0.87); }

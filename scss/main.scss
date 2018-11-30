@@ -22,6 +22,9 @@ body {
   color: set-text-color($body-bg);
   font-family: $mono;
 }
+.btn-floating .material-icons {
+  color: $off-black;
+}
 
 // mobile nav
 nav .button-collapse {
@@ -29,7 +32,13 @@ nav .button-collapse {
   color: $off-black;
   padding: 0 20px;
   margin: 0;
-  border-radius: 50%;
+  transition: ease 0.3s;
+  border-radius: 0 0 3px 3px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 5px;
+    color: rgba(0, 0, 0, 0.5);
+  }
 }
 .navbar-fixed ul {
   background: $secondary-color;
@@ -77,12 +86,14 @@ nav .button-collapse {
   justify-content: center;
   height: 300px;
 }
-
+.card-title {
+  background: rgba(0, 0, 0, 0.4);
+}
 .card-content {
-  color: $primary-color;
+  color: $off-black;
 }
 .card-image .btn-floating .material-icons {
-  color: rgba(0, 0, 0, 0.87);
+  color: $off-black;
 }
 
 .modal {
