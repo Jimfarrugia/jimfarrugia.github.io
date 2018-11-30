@@ -5312,7 +5312,7 @@ input[type=range]:focus::-ms-fill-upper {
   height: calc(100% + 60px);
   height: -moz-calc(100%);
   padding-bottom: 60px;
-  background-color: #003f74;
+  background-color: #ffeb3b;
   z-index: 999;
   overflow-y: auto;
   will-change: transform;
@@ -5331,7 +5331,7 @@ input[type=range]:focus::-ms-fill-upper {
     .side-nav li.active {
       background-color: rgba(0, 0, 0, 0.05); }
   .side-nav li > a {
-    color: rgba(250, 250, 250, 0.9);
+    color: rgba(0, 0, 0, 0.9);
     display: block;
     font-size: 14px;
     font-weight: 500;
@@ -5443,7 +5443,7 @@ input[type=range]:focus::-ms-fill-upper {
   background-color: #0069c0; }
   .side-nav .collapsible-body > ul:not(.collapsible) > li.active a,
   .side-nav.fixed .collapsible-body > ul:not(.collapsible) > li.active a {
-    color: #003f74; }
+    color: #ffeb3b; }
 
 .side-nav .collapsible-body {
   padding: 0; }
@@ -6840,24 +6840,17 @@ body {
   color: #fafafa;
   font-family: "Roboto Mono", monospace; }
 
-nav.nav-center ul {
-  text-align: center; }
-
-nav.nav-center ul li {
-  display: inline;
-  float: none; }
-
-nav.nav-center ul li a {
-  display: inline-block; }
-
 nav .button-collapse {
   background: #ffeb3b;
   color: rgba(0, 0, 0, 0.87);
   padding: 0 20px;
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0; }
+  display: inline-block; }
+
+.navbar-fixed ul {
+  background: #ffeb3b;
+  font-family: "Roboto Mono", monospace; }
+  .navbar-fixed ul li a {
+    color: rgba(0, 0, 0, 0.87); }
 
 .row-1,
 .row-2,
@@ -6872,7 +6865,7 @@ nav .button-collapse {
   padding-bottom: 30px;
   font-family: "Roboto Mono", monospace; }
   .main-header #logo {
-    padding: 90px 0 30px; }
+    padding: 60px 0 30px; }
   .main-header #logo a {
     display: block;
     width: 360px;

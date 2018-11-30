@@ -6,6 +6,7 @@ $header-height: 300px;
 $body-bg: $primary-color;
 $mono: "Roboto Mono", monospace;
 $sanserif: "Roboto", sans-serif;
+$off-black: rgba(0, 0, 0, 0.87);
 
 // Text Color Function # (Set text color based on the background color)
 @function set-text-color($background) {
@@ -22,26 +23,19 @@ body {
   font-family: $mono;
 }
 
-// nav
-nav.nav-center ul {
-  text-align: center;
-}
-nav.nav-center ul li {
-  display: inline;
-  float: none;
-}
-nav.nav-center ul li a {
-  display: inline-block;
-}
 // mobile nav
 nav .button-collapse {
   background: $secondary-color;
-  color: rgba(0, 0, 0, 0.87);
+  color: $off-black;
   padding: 0 20px;
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
+  display: inline-block;
+}
+.navbar-fixed ul {
+  background: $secondary-color;
+  font-family: $mono;
+  li a {
+    color: $off-black;
+  }
 }
 
 .row-1,
@@ -57,7 +51,7 @@ nav .button-collapse {
   padding-bottom: 30px;
   font-family: $mono;
   #logo {
-    padding: 90px 0 30px;
+    padding: 60px 0 30px;
   }
   #logo a {
     display: block;
@@ -72,6 +66,7 @@ nav .button-collapse {
     margin-bottom: 30px;
   }
 }
+
 .section-main {
   font-family: $sanserif;
 }
