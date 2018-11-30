@@ -1,9 +1,9 @@
 @import "./materialize";
 
 // Vars
-$header-bg: url(../img/pattern.png);
+$header-bg: url(../img/blue-sheets.jpg);
 $header-height: 300px;
-$body-bg: $secondary-color;
+$body-bg: $primary-color;
 $mono: "Roboto Mono", monospace;
 $sanserif: "Roboto", sans-serif;
 
@@ -21,19 +21,43 @@ body {
   color: set-text-color($body-bg);
   font-family: $mono;
 }
+
+// nav
+nav.nav-center ul {
+  text-align: center;
+}
+nav.nav-center ul li {
+  display: inline;
+  float: none;
+}
+nav.nav-center ul li a {
+  display: inline-block;
+}
+// mobile nav
+nav .button-collapse {
+  background: $secondary-color;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 0 20px;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .row-1,
 .row-2,
 .row-3 {
   opacity: 0;
 }
 .main-header {
-  background: $header-bg;
+  background: $header-bg bottom center no-repeat;
+  background-size: stretch;
   color: #fafafa;
-  padding-bottom: 30px;
   margin-bottom: 30px;
+  padding-bottom: 30px;
   font-family: $mono;
   #logo {
-    padding-top: 30px;
+    padding: 90px 0 30px;
   }
   #logo a {
     display: block;
@@ -41,13 +65,15 @@ body {
     height: 126px;
     margin: 0 auto;
   }
-  h1 {
-    margin: 0;
-    padding-top: 30px;
+  h2 {
+    margin-bottom: 30px;
+  }
+  h5 {
+    margin-bottom: 30px;
   }
 }
 .section-main {
-  font-family: "Roboto";
+  font-family: $sanserif;
 }
 .img-content {
   display: flex;
@@ -59,31 +85,38 @@ body {
 .card-content {
   color: $primary-color;
 }
+.card-image .btn-floating .material-icons {
+  color: rgba(0, 0, 0, 0.87);
+}
 
 .modal {
   overflow: show;
   background: #fafafa;
   color: set-text-color(#fafafa);
+  font-family: $sanserif;
 }
-
 .page-footer {
-  background: $primary-color;
+  background: $primary-color-dark;
   color: set-text-color($primary-color);
 
   a,
   a:visited {
-    color: $primary-gray-light;
+    color: $secondary-color;
   }
   a:active,
   a:hover {
-    color: $secondary-color;
+    color: #fff;
   }
   .footer-copyright {
     background: $secondary-color;
     color: set-text-color($secondary-color);
+    a,
+    a:visited {
+      color: rgba(0, 0, 0, 0.87);
+    }
     a:active,
     a:hover {
-      color: $primary-color;
+      color: $primary-color-dark;
     }
   }
 }

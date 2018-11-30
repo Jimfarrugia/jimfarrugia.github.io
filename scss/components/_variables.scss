@@ -32,15 +32,15 @@
 
 // 1. Colors
 // ==========================================================================
-
-$primary-color: #2196f3 !default;
+$primary-color: #0069c0 !default;
+//$primary-color: #2196f3 !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 $primary-gray-light: #eceff1 !default;
 $primary-gray-dark: #babdbe !default;
-
-$secondary-color: #0069c0 !default;
-$secondary-color-light: #6ec6ff !default;
+$secondary-color: #ffeb3b !default;
+//$secondary-color: #0069c0 !default;
+//$secondary-color-light: #6ec6ff !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
@@ -215,7 +215,7 @@ $navbar-brand-font-size: 2.1rem !default;
 // ==========================================================================
 $sidenav-font-size: 14px !default;
 $sidenav-font-color: rgba(250, 250, 250, 0.9) !default;
-$sidenav-bg-color: $secondary-color !default;
+$sidenav-bg-color: $primary-color-dark !default;
 $sidenav-padding: 16px !default;
 $sidenav-item-height: 48px !default;
 $sidenav-line-height: $sidenav-item-height !default;

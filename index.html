@@ -25,21 +25,32 @@
 
   <body>
     <header class="main-header">
+      <div id="logo">
+        <a href="index.html" title="JimFarrugia.com">
+          <img src="img/jflogo-white.svg" alt="JF" />
+        </a>
+      </div>
+      <h2 class="center">Jim Farrugia</h2>
+      <h5 class="center">Web Development and Graphic Design</h5>
       <nav class="transparent z-depth-0">
         <div class="nav-wrapper">
           <a
             href="#"
             data-activates="mobile-nav"
-            class="button-collapse show-on-large"
+            class="right button-collapse show-on-large"
           >
             <i class="material-icons">menu</i>
           </a>
-          <a href="index.html" class="brand-logo">Galappear</a>
-          <ul class="right hide-on-med-and-down">
-            <li class="active"><a href="index.html">Abstract</a></li>
-            <li><a href="logos.html">Logos</a></li>
-            <li><a href="gaming.html">Gaming</a></li>
-          </ul>
+          <div class="brand-logo center">
+            <!--
+              using 'brand-logo center' classes to allow for center-aligned menu
+            -->
+            <ul class="right hide-on-med-and-down">
+              <li class="active"><a href="index.html">Abstract</a></li>
+              <li><a href="logos.html">Logos</a></li>
+              <li><a href="gaming.html">Gaming</a></li>
+            </ul>
+          </div>
         </div>
         <ul class="side-nav" id="mobile-nav">
           <li><a href="index.html">Abstract</a></li>
@@ -47,13 +58,6 @@
           <li><a href="gaming.html">Gaming</a></li>
         </ul>
       </nav>
-      <div id="logo">
-        <a class="center" href="index.html" title="JimFarrugia.com">
-          <img src="img/jflogo-white.svg" alt="JF" />
-        </a>
-      </div>
-      <h2 class="center">Jim Farrugia</h2>
-      <h5 class="center">Web Development and Graphic Design</h5>
     </header>
 
     <!-- Section: Main -->
