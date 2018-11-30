@@ -118,5 +118,11 @@ nav .button-collapse {
     a:hover {
       color: $primary-color-dark;
     }
+    ul {
+      display: inline;
+    }
+    ul li {
+      display: inline-block;
+    }
   }
 }

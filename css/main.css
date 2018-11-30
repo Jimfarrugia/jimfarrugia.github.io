@@ -6922,5 +6922,9 @@ nav .button-collapse {
     .page-footer .footer-copyright a:active,
     .page-footer .footer-copyright a:hover {
       color: #003f74; }
+    .page-footer .footer-copyright ul {
+      display: inline; }
+    .page-footer .footer-copyright ul li {
+      display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */
