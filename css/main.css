@@ -6844,7 +6844,8 @@ nav .button-collapse {
   background: #ffeb3b;
   color: rgba(0, 0, 0, 0.87);
   padding: 0 20px;
-  display: inline-block; }
+  margin: 0;
+  border-radius: 50%; }
 
 .navbar-fixed ul {
   background: #ffeb3b;

@@ -28,7 +28,8 @@ nav .button-collapse {
   background: $secondary-color;
   color: $off-black;
   padding: 0 20px;
-  display: inline-block;
+  margin: 0;
+  border-radius: 50%;
 }
 .navbar-fixed ul {
   background: $secondary-color;
