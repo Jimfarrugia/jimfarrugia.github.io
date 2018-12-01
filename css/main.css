@@ -6893,6 +6893,8 @@ nav .button-collapse {
   flex-direction: column;
   justify-content: center;
   height: 300px; }
+  .img-content .btn, .img-content .btn-large {
+    color: rgba(0, 0, 0, 0.87); }
 
 .card-title {
   background: rgba(0, 0, 0, 0.4); }

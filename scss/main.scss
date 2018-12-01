@@ -85,6 +85,9 @@ nav .button-collapse {
   flex-direction: column;
   justify-content: center;
   height: 300px;
+  .btn {
+    color: $off-black;
+  }
 }
 .card-title {
   background: rgba(0, 0, 0, 0.4);
