@@ -6897,7 +6897,7 @@ nav .button-collapse {
     color: rgba(0, 0, 0, 0.87); }
 
 .card-title {
-  background: rgba(0, 0, 0, 0.4); }
+  background: rgba(0, 0, 0, 0.5); }
 
 .card-content {
   color: rgba(0, 0, 0, 0.87); }
@@ -6910,6 +6910,8 @@ nav .button-collapse {
   background: #fafafa;
   color: #000;
   font-family: "Roboto", sans-serif; }
+  .modal h4 {
+    padding-top: 2rem 0 1rem; }
 
 .page-footer {
   background: #003f74;

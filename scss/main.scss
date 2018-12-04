@@ -90,7 +90,7 @@ nav .button-collapse {
   }
 }
 .card-title {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 .card-content {
   color: $off-black;
@@ -104,6 +104,9 @@ nav .button-collapse {
   background: #fafafa;
   color: set-text-color(#fafafa);
   font-family: $sanserif;
+  h4 {
+    padding-top: 2rem 0 1rem;
+  }
 }
 .page-footer {
   background: $primary-color-dark;
