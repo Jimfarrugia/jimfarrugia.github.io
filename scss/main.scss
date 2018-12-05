@@ -22,7 +22,7 @@ body {
   color: set-text-color($body-bg);
   font-family: $mono;
 }
-.btn-floating .material-icons {
+.btn {
   color: $off-black;
 }
 
@@ -69,12 +69,6 @@ nav .button-collapse {
     height: 126px;
     margin: 0 auto;
   }
-  h2 {
-    margin-bottom: 30px;
-  }
-  h5 {
-    margin-bottom: 30px;
-  }
 }
 
 .section-main {
@@ -85,9 +79,6 @@ nav .button-collapse {
   flex-direction: column;
   justify-content: center;
   height: 300px;
-  .btn {
-    color: $off-black;
-  }
 }
 .card-title {
   background: rgba(0, 0, 0, 0.5);
@@ -105,7 +96,7 @@ nav .button-collapse {
   color: set-text-color(#fafafa);
   font-family: $sanserif;
   h4 {
-    padding-top: 2rem 0 1rem;
+    padding: 2rem 0 1rem;
   }
 }
 .page-footer {

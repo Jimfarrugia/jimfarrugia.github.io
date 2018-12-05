@@ -6840,7 +6840,7 @@ body {
   color: #fafafa;
   font-family: "Roboto Mono", monospace; }
 
-.btn-floating .material-icons {
+.btn, .btn-large {
   color: rgba(0, 0, 0, 0.87); }
 
 nav .button-collapse {
@@ -6880,10 +6880,6 @@ nav .button-collapse {
     width: 360px;
     height: 126px;
     margin: 0 auto; }
-  .main-header h2 {
-    margin-bottom: 30px; }
-  .main-header h5 {
-    margin-bottom: 30px; }
 
 .section-main {
   font-family: "Roboto", sans-serif; }
@@ -6893,8 +6889,6 @@ nav .button-collapse {
   flex-direction: column;
   justify-content: center;
   height: 300px; }
-  .img-content .btn, .img-content .btn-large {
-    color: rgba(0, 0, 0, 0.87); }
 
 .card-title {
   background: rgba(0, 0, 0, 0.5); }
@@ -6911,7 +6905,7 @@ nav .button-collapse {
   color: #000;
   font-family: "Roboto", sans-serif; }
   .modal h4 {
-    padding-top: 2rem 0 1rem; }
+    padding: 2rem 0 1rem; }
 
 .page-footer {
   background: #003f74;
