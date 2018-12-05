@@ -25,25 +25,28 @@
 
   <body>
     <header class="main-header">
-      <div class="navbar-fixed">
-        <nav class="transparent z-depth-0">
-          <div class="nav-wrapper container">
-            <a
-              href="#"
-              data-activates="mobile-nav"
-              class="left button-collapse show-on-large"
-            >
-              <i class="material-icons">menu</i>
-            </a>
-          </div>
-        </nav>
-      </div>
-      <ul class="side-nav" id="mobile-nav">
-        <li><a href="index.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <!--
+        // Hiding Navigation for now //
+        <div class="navbar-fixed">
+          <nav class="transparent z-depth-0">
+            <div class="nav-wrapper container">
+              <a
+                href="#"
+                data-activates="mobile-nav"
+                class="left button-collapse show-on-large"
+              >
+                <i class="material-icons">menu</i>
+              </a>
+            </div>
+          </nav>
+        </div>
+        <ul class="side-nav" id="mobile-nav">
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      -->
       <div id="logo">
         <a href="index.html" title="JimFarrugia.com">
           <img src="img/jflogo-white.svg" alt="JF" />
@@ -153,28 +156,37 @@
         <!-- Row 3 -->
         <div class="row row-3">
           <div class="col m6 hide-on-small-only">
-            <h3>"Rock, Paper, Scizzors!"</h3>
-            <p>
-              "Rock, Paper, Scizzors!" is a simple game we all know how to play.
-            </p>
-            <p>
-              I created a web page where the user can play against the browser.
-              This was a really fun way to improve my javascript skills.
-            </p>
-            <p>
-              I started with a very basic version of the game, then added more
-              graphics and features like a score count and a score tally.
-            </p>
-            <p>
-              <a href="#rps" class="btn waves-effect waves-light modal-trigger"
-                >View Project</a
-              >
-            </p>
+            <div class="img-content">
+              <h3>"Rock, Paper, Scizzors!"</h3>
+              <p>
+                "Rock, Paper, Scizzors!" is a simple game we all know how to
+                play.
+              </p>
+              <p>
+                I created a web page where the user can play against the
+                browser. This was a really fun way to improve my javascript
+                skills.
+              </p>
+              <p>
+                I started with a very basic version of the game, then added more
+                graphics and features like a score count and a score tally.
+              </p>
+              <p>
+                <a
+                  href="#rps"
+                  class="btn waves-effect waves-light modal-trigger"
+                  >View Project</a
+                >
+              </p>
+            </div>
           </div>
           <div class="col m6">
             <div class="card">
               <div class="card-image">
-                <img src="img/gallery/thumb_rps.png" alt="" />
+                <img
+                  src="img/gallery/thumb_rps.png"
+                  alt="Rock, Paper, Scizzors!"
+                />
                 <span class="card-title">"Rock, Paper, Scizzors!"</span>
                 <a
                   href="#rps"
@@ -192,16 +204,22 @@
         <!-- Row 4 -->
         <div class="row row-4">
           <div class="col m6 hide-on-small-only">
-            <h3>"Rock, Paper, Scizzors!"</h3>
+            <h3>Crystal Jade</h3>
+            <p>Crystal Jade is a Chinese Restaurant in St Clair, NSW.</p>
             <p>
-              "Rock, Paper, Scizzors!" is a simple game we all know how to play.
+              This is one of my early projects where I designed and developed a
+              single-page website to display their menu, opening hours and
+              contact details.
             </p>
             <p>
-              I created a web page where the user can play against the browser.
-              This was a really fun way to improve my javascript skills.
+              I used this as an opportunity to get some of my first experience
+              with CSS3 and jQuery by creating a fully collapsible/expandable
+              takeout menu.
             </p>
             <p>
-              <a href="#rps" class="btn waves-effect waves-light modal-trigger"
+              <a
+                href="#crystaljade"
+                class="btn waves-effect waves-light modal-trigger"
                 >View Project</a
               >
             </p>
@@ -209,17 +227,25 @@
           <div class="col m6">
             <div class="card">
               <div class="card-image">
-                <img src="img/gallery/thumb_rps.png" alt="" />
-                <span class="card-title">"Rock, Paper, Scizzors!"</span>
+                <img
+                  src="img/gallery/crystal-jade/crystal-jade-home.png"
+                  alt="Crystal Jade"
+                />
+                <span class="card-title">Crystal Jade</span>
                 <a
-                  href="#rps"
+                  href="#crystaljade"
                   class="btn-floating btn-large halfway-fab waves-effect waves-light modal-trigger"
                 >
                   <i class="material-icons">zoom_out_map</i>
                 </a>
               </div>
               <div class="card-content">
-                <p><em>Web Design, HTML & CSS, Javascript</em></p>
+                <p>
+                  <em
+                    >Web Design, Graphic Design, HTML & CSS, Javascript,
+                    jQuery</em
+                  >
+                </p>
               </div>
             </div>
           </div>
@@ -387,6 +413,7 @@
       <div class="container">
         <div class="modal-content">
           <h2>"Rock, Paper, Scizzors!"</h2>
+          <p><em>Web Design, HTML & CSS, Javascript</em></p>
           <p>
             "Rock, Paper, Scizzors!" is a simple game we all know how to play.
           </p>
@@ -399,6 +426,46 @@
             graphics and features like a score count and a score tally.
           </p>
 
+          <img
+            src="img/gallery/rps/rps-ver1.png"
+            alt="Rock Paper Scizzors version 1"
+            class="responsive-img"
+          />
+          <hr />
+          <img
+            src="img/gallery/rps/rps-ver2.png"
+            alt="Rock Paper Scizzors version 1"
+            class="responsive-img"
+          />
+          <hr />
+          <img
+            src="img/gallery/rps/rps-ver3.png"
+            alt="Rock Paper Scizzors version 1"
+            class="responsive-img"
+          />
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+    <!-- Modal 4 -->
+    <div id="crystaljade" class="modal">
+      <div class="container">
+        <div class="modal-content">
+          <h2>Crystal Jade</h2>
+          <p>
+            <em>Web Design, Logo Design, HTML & CSS, Javascript, jQuery</em>
+          </p>
+          <p>Crystal Jade is a Chinese Restaurant in St Clair, NSW.</p>
+          <p>
+            This is one of my early projects where I designed and developed a
+            single-page website to display their menu, opening hours and contact
+            details.
+          </p>
+          <p>
+            I used this as an opportunity to get some of my first experience
+            with CSS3 and jQuery by creating a fully collapsible/expandable
+            takeout menu.
+          </p>
           <img
             src="img/gallery/rps/rps-ver1.png"
             alt="Rock Paper Scizzors version 1"
