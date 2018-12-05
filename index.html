@@ -203,27 +203,6 @@
         </div>
         <!-- Row 4 -->
         <div class="row row-4">
-          <div class="col m6 hide-on-small-only">
-            <h3>Crystal Jade</h3>
-            <p>Crystal Jade is a Chinese Restaurant in St Clair, NSW.</p>
-            <p>
-              This is one of my early projects where I designed and developed a
-              single-page website to display their menu, opening hours and
-              contact details.
-            </p>
-            <p>
-              I used this as an opportunity to get some of my first experience
-              with CSS3 and jQuery by creating a fully collapsible/expandable
-              takeout menu.
-            </p>
-            <p>
-              <a
-                href="#crystaljade"
-                class="btn waves-effect waves-light modal-trigger"
-                >View Project</a
-              >
-            </p>
-          </div>
           <div class="col m6">
             <div class="card">
               <div class="card-image">
@@ -247,6 +226,29 @@
                   >
                 </p>
               </div>
+            </div>
+          </div>
+          <div class="col m6 hide-on-small-only">
+            <div class="img-content">
+              <h3>Crystal Jade</h3>
+              <p>Crystal Jade is a Chinese Restaurant in St Clair, NSW.</p>
+              <p>
+                This is one of my early projects where I designed and developed
+                a single-page website to display their menu, opening hours and
+                contact details.
+              </p>
+              <p>
+                I used this as an opportunity to get some of my first experience
+                with CSS3 and jQuery by creating a fully collapsible/expandable
+                takeout menu.
+              </p>
+              <p>
+                <a
+                  href="#crystaljade"
+                  class="btn waves-effect waves-light modal-trigger"
+                  >View Project</a
+                >
+              </p>
             </div>
           </div>
         </div>
@@ -467,20 +469,14 @@
             takeout menu.
           </p>
           <img
-            src="img/gallery/rps/rps-ver1.png"
-            alt="Rock Paper Scizzors version 1"
+            src="img/gallery/crystal-jade/crystal-jade-home.png"
+            alt="Crystal Jade Home Page"
             class="responsive-img"
           />
           <hr />
           <img
-            src="img/gallery/rps/rps-ver2.png"
-            alt="Rock Paper Scizzors version 1"
-            class="responsive-img"
-          />
-          <hr />
-          <img
-            src="img/gallery/rps/rps-ver3.png"
-            alt="Rock Paper Scizzors version 1"
+            src="img/gallery/crystal-jade/crystal-jade-menu.png"
+            alt="Crystal Jade Open Menu"
             class="responsive-img"
           />
         </div>
@@ -512,20 +508,27 @@
           },
           {
             selector: ".row-2",
-            offset: 300,
+            offset: 200,
             callback: function(el) {
               Materialize.fadeInImage($(el));
             }
           },
           {
             selector: ".row-3",
-            offset: 400,
+            offset: 275,
+            callback: function(el) {
+              Materialize.fadeInImage($(el));
+            }
+          },
+          {
+            selector: ".row-4",
+            offset: 325,
             callback: function(el) {
               Materialize.fadeInImage($(el));
             }
           }
         ];
-
+        //Init Scrollfire
         Materialize.scrollFire(options);
       });
     </script>
