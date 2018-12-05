@@ -114,7 +114,7 @@
             <div class="card">
               <div class="card-image">
                 <img
-                  src="img/gallery/thumb_on-tap-sports-bar.jpg"
+                  src="img/gallery/on-tap/thumb_on-tap-sports-bar.jpg"
                   alt="On Tap Sports Bar"
                 />
                 <span class="card-title">On Tap</span>
@@ -184,7 +184,7 @@
             <div class="card">
               <div class="card-image">
                 <img
-                  src="img/gallery/thumb_rps.png"
+                  src="img/gallery/rps/thumb_rps.png"
                   alt="Rock, Paper, Scizzors!"
                 />
                 <span class="card-title">"Rock, Paper, Scizzors!"</span>
@@ -252,6 +252,52 @@
             </div>
           </div>
         </div>
+        <!-- Row 5 -->
+        <div class="row row-5">
+          <div class="col m6 hide-on-small-only">
+            <div class="img-content">
+              <h3>Australian Time Converter</h3>
+              <p>Australian Time Converter is one of my first projects.</p>
+              <p>
+                I wanted to get some practice with javascript by creating a form
+                which takes a time in an Australian time-zone and converts it to
+                a different Australian time-zone.
+              </p>
+              <p>
+                Being a newbie, I ran into a lot of walls and went the hard way
+                about few a things but I still had fun and leared a lot with
+                this project.
+              </p>
+              <p>
+                <a
+                  href="#atc"
+                  class="btn waves-effect waves-light modal-trigger"
+                  >View Project</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col m6">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="img/gallery/aus-time-converter/thumb_aus-time-converter.png"
+                  alt="Australian Time Converter"
+                />
+                <span class="card-title">Australian Time Converter</span>
+                <a
+                  href="#atc"
+                  class="btn-floating btn-large halfway-fab waves-effect waves-light modal-trigger"
+                >
+                  <i class="material-icons">zoom_out_map</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p><em>HTML & CSS, Javascript</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- end .main .container -->
     </section>
@@ -270,33 +316,28 @@
             </p>
           </div>
           <div class="col l4 offset-l2 s12">
-            <h5>Links</h5>
-            <ul>
-              <li><a href="index.html">Abstract</a></li>
-              <li><a href="logos.html">Logos</a></li>
-              <li><a href="gaming.html">Gaming</a></li>
-            </ul>
+            <!--
+              <h5>Links</h5>
+              <ul>
+                <li>
+                  <a href="#!"> <ion-icon name="logo-dribbble"></ion-icon> </a>
+                </li>
+                <li>
+                  <a href="#!"> <ion-icon name="logo-dribbble"></ion-icon> </a>
+                </li>
+                <li>
+                  <a href="#!"> <ion-icon name="logo-dribbble"></ion-icon> </a>
+                </li>
+                <li>
+                  <a href="#!"> <ion-icon name="logo-dribbble"></ion-icon> </a>
+                </li>
+              </ul>
+            -->
           </div>
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container">
-          <p class="left">© 2018 Jim Farrugia</p>
-          <ul class="right">
-            <li>
-              <a href="#!"> <ion-icon name="logo-dribbble"></ion-icon> </a>
-            </li>
-            <li>
-              <a href="#!"> <ion-icon name="logo-dribbble"></ion-icon> </a>
-            </li>
-            <li>
-              <a href="#!"> <ion-icon name="logo-dribbble"></ion-icon> </a>
-            </li>
-            <li>
-              <a href="#!"> <ion-icon name="logo-dribbble"></ion-icon> </a>
-            </li>
-          </ul>
-        </div>
+        <div class="container"><p class="center">© 2018 Jim Farrugia</p></div>
       </div>
     </footer>
     <!-- Modal 1 -->
@@ -318,7 +359,7 @@
 
           <img
             src="img/gallery/eliquid-data/edv2_orders.png"
-            alt=""
+            alt="Eliquid Data"
             class="responsive-img"
           />
         </div>
@@ -436,13 +477,13 @@
           <hr />
           <img
             src="img/gallery/rps/rps-ver2.png"
-            alt="Rock Paper Scizzors version 1"
+            alt="Rock Paper Scizzors version 2"
             class="responsive-img"
           />
           <hr />
           <img
             src="img/gallery/rps/rps-ver3.png"
-            alt="Rock Paper Scizzors version 1"
+            alt="Rock Paper Scizzors version 3"
             class="responsive-img"
           />
         </div>
@@ -483,6 +524,38 @@
         <div class="modal-footer"></div>
       </div>
     </div>
+    <!-- Modal 5 -->
+    <div id="atc" class="modal">
+      <div class="container">
+        <div class="modal-content">
+          <h2>Australian Time Converter</h2>
+          <p><em>HTML & CSS, Javascript</em></p>
+          <p>Australian Time Converter is one of my first projects.</p>
+          <p>
+            I wanted to get some practice with javascript by creating a form
+            which takes a time in an Australian time-zone and converts it to a
+            different Australian time-zone.
+          </p>
+          <p>
+            Being a newbie, I ran into a lot of walls and went the hard way
+            about few a things but I still had fun and leared a lot with this
+            project.
+          </p>
+          <img
+            src="img/gallery/aus-time-converter/atc_blank-form.png"
+            alt="Australian Time Converter Blank Form"
+            class="responsive-img"
+          />
+          <hr />
+          <img
+            src="img/gallery/aus-time-converter/atc_complete-form.png"
+            alt="Australian Time Converter Complete Form"
+            class="responsive-img"
+          />
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
     <!-- Import jQuery before materialize.js -->
     <script
       type="text/javascript"
@@ -515,13 +588,20 @@
           },
           {
             selector: ".row-3",
-            offset: 275,
+            offset: 250,
             callback: function(el) {
               Materialize.fadeInImage($(el));
             }
           },
           {
             selector: ".row-4",
+            offset: 275,
+            callback: function(el) {
+              Materialize.fadeInImage($(el));
+            }
+          },
+          {
+            selector: ".row-5",
             offset: 325,
             callback: function(el) {
               Materialize.fadeInImage($(el));
