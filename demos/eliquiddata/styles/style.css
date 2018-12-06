@@ -1,0 +1,34 @@
+html { font-size: 0.75rem; }
+body { padding-top: 40px; position: relative !important;}
+h1, h2, h3, h4 { padding: 10px 0; }
+h1 { padding: 25px 0; }
+@media (min-width: 576px) {
+    html { font-size: 0.8rem; }
+    body { padding-top: 50px; }
+}
+@media (min-width: 768px) { 
+    html { font-size: 0.85rem; }
+    body { padding-top: 50px; }
+}
+@media (min-width: 992px) { 
+    html { font-size: 0.9rem; }
+}
+@media (min-width: 1200px) {
+    html { font-size: 1rem; }
+    body { padding-top: 60px; }
+}
+#flavourSelection .form-row {
+    margin-bottom: 15px;
+}
+.form-row input {
+    margin-bottom: 15px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.025), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.025));
+    margin: 20px 0;
+}
+nav#main-nav {
+    background-color: rgba(0,0,0,0.75);/* rgba(92,184,92,0.9);*/
+}
