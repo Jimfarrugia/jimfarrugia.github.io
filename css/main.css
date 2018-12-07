@@ -6840,7 +6840,9 @@ body {
   color: #fafafa;
   font-family: "Roboto Mono", monospace; }
 
-.btn, .btn-large {
+.btn, .btn-large,
+.btn i,
+.btn-large i {
   color: rgba(0, 0, 0, 0.87); }
 
 nav .button-collapse {
@@ -6893,9 +6895,6 @@ nav .button-collapse {
   background: rgba(0, 0, 0, 0.5); }
 
 .card-content {
-  color: rgba(0, 0, 0, 0.87); }
-
-.card-image .btn-floating .material-icons {
   color: rgba(0, 0, 0, 0.87); }
 
 .modal {

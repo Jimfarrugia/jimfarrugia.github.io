@@ -22,7 +22,8 @@ body {
   color: set-text-color($body-bg);
   font-family: $mono;
 }
-.btn {
+.btn,
+.btn i {
   color: $off-black;
 }
 
@@ -83,9 +84,6 @@ nav .button-collapse {
   background: rgba(0, 0, 0, 0.5);
 }
 .card-content {
-  color: $off-black;
-}
-.card-image .btn-floating .material-icons {
   color: $off-black;
 }
 
