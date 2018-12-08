@@ -10,191 +10,166 @@
 *********************************************************/
 @charset "utf-8";
 @font-face {
-    font-family: 'badaboom';
-    src: url('badabb_.eot');
-    src: url('badabb_.eot?#iefix') format('embedded-opentype'),
-         url('badabb_.woff') format('woff'),
-         url('badabb_.ttf') format('truetype'),
-		 url('badabb_.svg#badaboom') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "badaboom";
+  src: url("badabb_.eot");
+  src: url("badabb_.eot?#iefix") format("embedded-opentype"),
+    url("badabb_.woff") format("woff"), url("badabb_.ttf") format("truetype"),
+    url("badabb_.svg#badaboom") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-@media screen and (-webkit-min-device-pixel-ratio:0){
-	@font-face {
-		font-family: 'badaboom';
-		src: url('badabb_.svg')format('svg');
-	}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "badaboom";
+    src: url("badabb_.svg") format("svg");
+  }
 }
-ul, li {
-	margin: 0;
-	padding: 0;
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
-html, body {
-	margin: 0;
-	padding: 0;
-	background: #c18e44;
-	font-family: badaboom;
-	color: #FFF;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #c18e44;
+  font-family: badaboom;
+  color: #fff;
 }
 h1 {
-	font-size: 80px;
-	text-align: center;
+  font-size: 80px;
+  text-align: center;
 }
-h1, h2 {
-	text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
-	letter-spacing: 2px;
+h1,
+h2 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  letter-spacing: 2px;
 }
 #top {
-	width: 960px;
-	margin: 0 auto;
-	height: 150px;
+  width: 960px;
+  margin: 0 auto;
+  height: 150px;
 }
 #top-left {
-	width: 48%;
-	line-height: 150px;
-	height: 100%;
-	float: left;
-	padding-right: 2%;
-	text-align: right;
+  width: 48%;
+  line-height: 150px;
+  height: 100%;
+  float: left;
+  padding-right: 2%;
+  text-align: right;
 }
 #top-left h2 {
-	margin: 0; padding: 0;
-	font-size: 35px;
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
 }
 #top-left h2 span {
-	color: #ffff4d;
+  color: #ffff4d;
 }
 #top-right {
-	width: 50%;
-	height: 100%;
-	float: right;
-	text-align: left;
+  width: 50%;
+  height: 100%;
+  float: right;
+  text-align: left;
 }
 #top-right ul li {
-	list-style: none;
+  list-style: none;
 }
 #top-right ul li a {
-	display: block;
-	width: 100%;
-	height: 50px;
-	color: #FFF;
-	text-decoration: none;
-	padding-left: 60px;
-	line-height: 50px;
-	font-size: 28px;
-	text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-	letter-spacing: 1px;
-	transition: ease 0.4s;
+  display: block;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 60px;
+  line-height: 50px;
+  font-size: 28px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+  transition: ease 0.4s;
 }
 #top-right ul li a span {
-	color: #ffff4d;
+  color: #ffff4d;
 }
 #top-right ul li a:hover {
-	color: #ffff4d;
+  color: #ffff4d;
 }
 #top-right ul li a#rock {
-	background: url('rock.gif') no-repeat top left;
+  background: url("rock.png") no-repeat top left;
 }
 #top-right ul li a#paper {
-	background: url('paper.gif') no-repeat top left;
+  background: url("paper.png") no-repeat top left;
 }
 #top-right ul li a#scissors {
-	background: url('scissors.gif') no-repeat top left;
+  background: url("scissors.png") no-repeat top left;
 }
 #bottom {
-	width: 960px;
-	margin: 0 auto;
+  width: 960px;
+  margin: 0 auto;
 }
 #bottom-left {
-	width: 48%;
-	float: left;
-	padding-right: 2%;
-	padding-top: 10px;
-	text-align: right;
+  width: 48%;
+  float: left;
+  padding-right: 2%;
+  padding-top: 10px;
+  text-align: right;
 }
 #bottom-left p {
-	text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-	font-size: 28px;
-	letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  font-size: 28px;
+  letter-spacing: 1px;
 }
 #bottom-left p span {
-	color: #ffff4d;
+  color: #ffff4d;
 }
 #bottom-right {
-	width: 50%;
-	float: right;
-	text-align: left;
+  width: 50%;
+  float: right;
+  text-align: left;
 }
 #bottom-right p {
-	margin: 20px 0 0 0;
-	font-size: 80px;
-	padding-left: 20px;
-	text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+  margin: 20px 0 0 0;
+  font-size: 80px;
+  padding-left: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
-table, th, td {
-	font-size: 15px;
-	font-family: Arial, Helvetica, sans-serif;
-	border: 1px solid white;
-	border-collapse: collapse;
-	text-align: center;
-	padding: 5px 15px;
+table,
+th,
+td {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px 15px;
 }
 table {
-	margin: 50px 0 0 23px;
-	border: none;
-	padding: none;
+  margin: 50px 0 0 23px;
+  border: none;
+  padding: none;
 }
 table th {
-	font-weight: normal;
+  font-weight: normal;
 }
 table th:nth-child(1) {
-	background: green;
+  background: green;
 }
 table th:nth-child(2) {
-	background: red;
+  background: red;
 }
 table th:nth-child(3) {
-	background: blue;
+  background: blue;
 }
 p#footer {
-	font-size: 12px;
-	font-family: Arial, Helvetica, sans-serif;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	margin-left: -30px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -30px;
 }
 p#footer a {
-	color: #FF3;
-	text-decoration: none;
+  color: #ff3;
+  text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
