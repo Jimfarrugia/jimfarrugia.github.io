@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>Rock, Paper, Scissors!</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" language="javascript" src="script.js"></script>
+</head>
+<body>
+    <h1>Rock, Paper, Scissors!</h1>
+    <div id="top">
+        <div id="top-left">
+            <h2>Choose your <span>weapon:</span></h2>
+        </div>
+        <div id="top-right">
+            <ul>
+                <li><a href="#" id="rock" onClick="battle('rock')">I'm ready to <span>Rock</span>!</a></li>
+                <li><a href="#" id="paper" onClick="battle('paper')">Ready for a <span>Paper</span> cut?</a></li>
+                <li><a href="#" id="scissors" onClick="battle('scissors')">I run with <span>Scissors</span>!</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="bottom">
+    	<div id="bottom-left">
+        	<p id="choices"></p>
+        </div>
+        <div id="bottom-right">
+        	<p id="results"></p>
+            <table id="scoreboard" style="display: none;">
+                <tr>
+                	<th>Wins</th>
+                	<th>Losses</th>
+                	<th>Draws</th>
+                </tr>
+                <tr>
+                	<td id="wins"></td>
+                	<td id="losses"></td>
+                	<td id="draws"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <p id="footer">&copy;<script>document.write(new Date().getFullYear())</script><a href="http://www.jimfarrugia.com"> Jim Farrugia</a></p>
+</body>
+</html>

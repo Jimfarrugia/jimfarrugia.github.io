@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <title>Rock Paper Scissors!</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div id="pageWrap">
+    <!-- Page Title -->
+    <header>
+        <h1>Rock Paper Scissors!</h1>
+    </header>
+    
+    <!-- Results -->
+    <section id="results" style="display: none;">
+        
+        <!-- For Last Round -->
+        <div class="row">
+            <div class="column">
+                <p>You Chose:</p>
+                <p id="userChoice"><!-- User's Choice --></p>
+            </div>
+            <div class="column">
+                <p id="outcome"><!-- Outcome --></p>
+            </div>
+            <div class="column">
+                <p>PC Chose:</p>
+                <p id="pcChoice"><!-- PC's Choice --></p>
+            </div>
+        </div><!-- end .row -->
+        
+        <!-- Overall Tally -->
+        <div class="row">
+            <div class="column">
+                <p>Wins: <span id="winTally"></span></p>
+            </div>
+            <div class="column">
+                <p>Draws: <span id="drawTally"></span></p>
+            </div>
+            <div class="column">
+                <p>Losses: <span id="lossTally"></span></p>
+            </div>
+        </div><!-- end .row -->
+        
+        <div class="row">
+            <p>Play Again</p>
+        </div><!-- end .row -->
+        
+    </section><!-- end #results -->
+    
+    <!-- User Select -->
+    <section id="select" class="row">
+            <div class="column">
+                <!-- Rock -->
+                <a href="#" onClick="battle('rock')" title="Rock">
+                    <img src="img/rock320.gif" height="320" width="320" alt="Rock">
+                </a>
+            </div>
+            <div class="column">
+                <!-- Paper -->
+                <a href="#" onclick="battle('paper')" title="Paper">
+                    <img src="img/paper320.gif" height="320" width="320" alt="Paper">
+                </a>
+            </div>
+            <div class="column">
+                <!-- Scissors -->
+                <a href="#" onclick="battle('scissors')" title="Scissors">
+                    <img src="img/scissors320.gif" height="320" width="320" alt="Scissors">
+                </a>
+            </div>
+    </section><!-- end #select--><!-- end .row -->
+    
+</div><!-- end #pageWrap -->
+</body>
+</html>

@@ -1,0 +1,89 @@
+@charset "utf-8";
+@font-face {
+  font-family: "badaboom";
+  src: url("type/badabb_.eot");
+  src: url("type/badabb_.eot?#iefix") format("embedded-opentype"),
+    url("type/badabb_.woff") format("woff"),
+    url("type/badabb_.ttf") format("truetype"),
+    url("type/badabb_.svg#badaboom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "badaboom";
+    src: url("type/badabb_.svg") format("svg");
+  }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #c18e44;
+  font-family: "badaboom";
+  color: #fff;
+  text-align: center;
+}
+p {
+  margin: 0;
+}
+#pageWrap {
+  width: 960px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 30px 0;
+  font-size: 80px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.45);
+  letter-spacing: 2px;
+}
+.row {
+  width: 100%;
+  overflow: hidden;
+}
+.row .column {
+  width: 320px;
+  float: left;
+}
+/*
+    Results Section
+*/
+#results .row:nth-child(1) {
+  font-size: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+}
+#results #outcome {
+  font-size: 65px;
+}
+#results .row:nth-child(1) .column:nth-child(odd) p:nth-child(1),
+#results .row:nth-child(2) {
+  color: #ffff4d;
+}
+#results .row:nth-child(2) {
+  margin: 15px 0;
+  font-size: 25px;
+}
+#results .row:nth-child(2) p span {
+  color: #fff;
+}
+#results .row:nth-child(3) {
+  margin: 10px 0;
+  font-size: 40px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+}
+/*
+    User Select Section
+*/
+#select {
+  margin: 20px 0 0 0;
+}
+#select .column a {
+  display: block;
+  position: relative;
+}
+#select .column a:hover:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}

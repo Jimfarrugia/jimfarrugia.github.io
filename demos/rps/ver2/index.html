@@ -1,0 +1,110 @@
+<!--
+    index.html file for Rock, Paper, Scissors!
+    written by Jim Farrugia of jimfarrugia.com
+-->
+<!doctype html>
+<html>
+
+<head>
+	<title>Rock, Paper, Scissors!</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" language="javascript" src="script.js"></script>
+</head>
+
+<body>
+    
+    <h1>Rock, Paper, Scissors!</h1>
+    
+    <div id="top">
+        
+        <div id="top-left">
+            <h2>Choose your <span>weapon:</span></h2>
+        </div>
+        
+        <div id="top-right">
+            <!-- This is where the user selects a 'weapon'.
+                 When the user clicks one, the battle() function is triggered
+                 and is passed a value depending on the user's choice. -->
+            <ul>
+                <li>
+                    <a href="#" id="rock" onClick="battle('rock')">
+                        I'm ready to <span>Rock</span>!
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="paper" onClick="battle('paper')">
+                        Ready for a <span>Paper</span> cut?
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="scissors" onClick="battle('scissors')">
+                        I run with <span>Scissors</span>!
+                    </a>
+                </li>
+            </ul>
+        </div><!-- end #top-right -->
+        
+    </div><!-- end #top -->
+    
+    <div id="bottom">
+    	<!-- This is the results half of the page
+    	     shown only after one round has been played. -->
+    	     
+    	<div id="bottom-left">
+        	<!-- This is where the user's and pc's choices are shown. -->
+        	<p id="choices"></p>
+        </div>
+        
+        <div id="bottom-right">
+        	<!-- The results from the last round are shown here.
+        	     (ie. 'you lose' or 'you win') -->
+        	<p id="results"></p>
+            <!-- This is the scoreboard which keeps track
+                 of wins, losses and draws. -->
+            <table id="scoreboard" style="display: none;">
+                <tr>
+                	<th>Wins</th>
+                	<th>Losses</th>
+                	<th>Draws</th>
+                </tr>
+                <tr>
+                	<td id="wins"><!-- userWins display here --></td>
+                	<td id="losses"><!-- pcWins display here --></td>
+                	<td id="draws"><!-- draws display here --></td>
+                </tr>
+                <tr>
+                    <th>WinTally</th>
+                    <th>LossTally</th>
+                    <th>DrawTally</th>
+                </tr>
+                <tr>
+                    <td id="winTally"></td>
+                    <td id="lossTally"></td>
+                    <td id="drawTally"></td>
+                </tr>
+            </table>
+            
+        </div><!-- end #bottom-right -->
+    </div><!-- end #bottom -->
+    
+    <p id="footer">
+        &copy; 
+        <!-- Short inline script to keep the year current
+             in the copyright line. -->
+        <script>document.write(new Date().getFullYear())</script>
+        <a href="http://www.jimfarrugia.com"> Jim Farrugia</a>
+    </p>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53738581-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+    
+</body>
+
+</html>
