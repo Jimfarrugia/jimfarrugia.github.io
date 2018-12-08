@@ -10,109 +10,6 @@
 <meta charset="UTF-8">
 <title>Crystal Jade Chinese Resteraunt</title>
 <link rel="stylesheet" href="style.css" type="text/css">
-<script src="http://code.jquery.com/jquery-3.2.1.min.js"
-    type="text/javascript"></script>
-<script language="javascript" type="text/javascript">
-/*
-    Drop Down Functionality
-*/
-$(document).ready(function() {
-    // Hide elements with .hidden
-    $(".hidden").hide();
-    // when .toggle is clicked
-    $(".toggle").click(function () {
-        // if the next element is hidden
-        if ($(this).next().is(":hidden")) {
-            var $this = $(this);
-            // show the element (via slideDown)
-            $this.next().slideDown("fast");
-            $this.children('.arrow').addClass("down");
-            $this.children('.arrow').removeClass("up");
-            $this.children('a').addClass('down');
-        } else {
-            var $this = $(this);
-            // else hide it (via slideUp)
-            $this.next().slideUp("fast");
-            $this.children('.arrow').addClass("up");
-            $this.children('.arrow').removeClass("down");
-            $this.children('a').removeClass('down');
-        }
-    });
-    /*
-        Form Validation
-    */
-    var $name = $("#name");
-    var $email = $("#email");
-    var $subject = $("#subject");
-    var $msg = $("#message");
-    var $submit = $("#submit");
-    
-    function readyCheck() {
-        // if all fields are valid
-        if ($name.hasClass("valid") && $email.hasClass("valid") && $subject.hasClass("valid")){
-            // give submit button the class - ready
-            $("#submit").addClass("ready");
-            
-            $submit.attr("type","submit");
-        }
-        else {
-            // else remove all classes from submit button
-            $("#submit").removeClass();
-            $submit.attr("type","button");
-        }
-    }
-    
-    // When NAME field loses focus
-    $name.blur(function() {
-        // remove all classes
-        $name.removeClass();
-        // if less than 3 characters long
-        if ($name.val().length < 3) {
-            // add class - invalid
-            $name.addClass("invalid");
-        } else {
-            // else add class - valid
-            $name.addClass("valid");
-        }
-        readyCheck();
-    });
-    $email.blur(function() {
-        $email.removeClass();
-        // reg exp for validating email
-        var $filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        if (!$filter.test($email.val())){
-            $email.addClass("invalid");
-        } else {
-            $email.addClass("valid");
-        }
-        readyCheck();
-    });
-    $subject.blur(function() {
-        $subject.removeClass();
-        // subject line can't be empty
-        if ($subject.val().length < 1) {
-            $subject.addClass("invalid");
-        } else {
-            $subject.addClass("valid");
-        }
-        readyCheck();
-    });
-    //
-    //
-    //
-    //
-    
-    $("input[type=button]").click(function() {
-        window.alert("Fill it in properly, dick.");
-    });
-    
-    //
-    //
-    //
-    //
-    //
-});
-</script>
 </head>
 
 <body>
@@ -519,6 +416,108 @@ $(document).ready(function() {
          
     </div><!-- end .row -->
 </footer><!-- end #contact -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+    /*
+        Drop Down Functionality
+    */
+    $(document).ready(function () {
+        // Hide elements with .hidden
+        $(".hidden").hide();
+        // when .toggle is clicked
+        $(".toggle").click(function () {
+            // if the next element is hidden
+            if ($(this).next().is(":hidden")) {
+                var $this = $(this);
+                // show the element (via slideDown)
+                $this.next().slideDown("fast");
+                $this.children('.arrow').addClass("down");
+                $this.children('.arrow').removeClass("up");
+                $this.children('a').addClass('down');
+            } else {
+                var $this = $(this);
+                // else hide it (via slideUp)
+                $this.next().slideUp("fast");
+                $this.children('.arrow').addClass("up");
+                $this.children('.arrow').removeClass("down");
+                $this.children('a').removeClass('down');
+            }
+        });
+        /*
+            Form Validation
+        */
+        var $name = $("#name");
+        var $email = $("#email");
+        var $subject = $("#subject");
+        var $msg = $("#message");
+        var $submit = $("#submit");
+
+        function readyCheck() {
+            // if all fields are valid
+            if ($name.hasClass("valid") && $email.hasClass("valid") && $subject.hasClass("valid")) {
+                // give submit button the class - ready
+                $("#submit").addClass("ready");
+
+                $submit.attr("type", "submit");
+            }
+            else {
+                // else remove all classes from submit button
+                $("#submit").removeClass();
+                $submit.attr("type", "button");
+            }
+        }
+
+        // When NAME field loses focus
+        $name.blur(function () {
+            // remove all classes
+            $name.removeClass();
+            // if less than 3 characters long
+            if ($name.val().length < 3) {
+                // add class - invalid
+                $name.addClass("invalid");
+            } else {
+                // else add class - valid
+                $name.addClass("valid");
+            }
+            readyCheck();
+        });
+        $email.blur(function () {
+            $email.removeClass();
+            // reg exp for validating email
+            var $filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if (!$filter.test($email.val())) {
+                $email.addClass("invalid");
+            } else {
+                $email.addClass("valid");
+            }
+            readyCheck();
+        });
+        $subject.blur(function () {
+            $subject.removeClass();
+            // subject line can't be empty
+            if ($subject.val().length < 1) {
+                $subject.addClass("invalid");
+            } else {
+                $subject.addClass("valid");
+            }
+            readyCheck();
+        });
+        //
+        //
+        //
+        //
+
+        $("input[type=button]").click(function () {
+            window.alert("Fill it in properly, dick.");
+        });
+
+        //
+        //
+        //
+        //
+        //
+    });
+</script>
 
 
 </body>
