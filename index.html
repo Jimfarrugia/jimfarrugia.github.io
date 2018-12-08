@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Import Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
     <!-- Import Google Icon Font -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -18,16 +25,7 @@
       href="css/materialize.min.css"
       media="screen,projection"
     />
-    <!-- Import Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
-    <title>Jim Farrugia</title>
+    <!-- Link favicons -->
     <link
       rel="icon"
       type="image/png"
@@ -53,9 +51,14 @@
       href="/icons/favicon-64x64.png"
     />
     <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <!-- Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <title>Jim Farrugia</title>
   </head>
 
   <body>
+    <!-- Page Header -->
     <header class="main-header">
       <!--
         // Hiding Navigation for now //
@@ -88,10 +91,10 @@
       <h5 class="center">Designer | Developer</h5>
     </header>
 
-    <!-- Section: Main -->
+    <!-- Main Section -->
     <section class="section section-main">
       <div class="container">
-        <!-- Row 1 -->
+        <!-- Row 1 - Eliquid Data -->
         <div class="row row-1">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
@@ -145,7 +148,7 @@
             </div>
           </div>
         </div>
-        <!-- Row 2 -->
+        <!-- Row 2 - On Tap -->
         <div class="row row-2">
           <div class="col m6">
             <div class="card">
@@ -190,7 +193,7 @@
             </div>
           </div>
         </div>
-        <!-- Row 3 -->
+        <!-- Row 3 - RPS -->
         <div class="row row-3">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
@@ -251,7 +254,7 @@
             </div>
           </div>
         </div>
-        <!-- Row 4 -->
+        <!-- Row 4 - Crystal Jade -->
         <div class="row row-4">
           <div class="col m6">
             <div class="card">
@@ -307,7 +310,7 @@
             </div>
           </div>
         </div>
-        <!-- Row 5 -->
+        <!-- Row 5 - ATC -->
         <div class="row row-5">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
@@ -361,6 +364,8 @@
       </div>
       <!-- end .main .container -->
     </section>
+
+    <!-- Page Footer -->
     <footer class="page-footer">
       <div class="container">
         <div class="row">
@@ -406,7 +411,8 @@
         </div>
       </div>
     </footer>
-    <!-- Modal 1 -->
+
+    <!-- Modal 1 - Eliquid Data -->
     <div id="eliquidData" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -456,7 +462,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 2 -->
+    <!-- Modal 2 - On Tap -->
     <div id="ontap" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -541,7 +547,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 3 -->
+    <!-- Modal 3 - RPS -->
     <div id="rps" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -594,7 +600,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 4 -->
+    <!-- Modal 4 - Crystal Jade -->
     <div id="crystaljade" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -635,7 +641,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 5 -->
+    <!-- Modal 5 - ATC -->
     <div id="atc" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -674,6 +680,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
+
     <!-- Import jQuery before materialize.js -->
     <script
       type="text/javascript"
@@ -691,7 +698,7 @@
         // Init Dropdown
         $(".dropdown-trigger").dropdown();
 
-        // Scrollfire
+        // Scrollfire Options
         const options = [
           {
             selector: ".row-1",
@@ -729,7 +736,7 @@
             }
           }
         ];
-        //Init Scrollfire
+        // Init Scrollfire
         Materialize.scrollFire(options);
       });
     </script>
