@@ -208,13 +208,26 @@
                 I started with a very basic version of the game, then added more
                 graphics and features like a score count and a score tally.
               </p>
-              <p>
-                <a
-                  href="#rps"
-                  class="btn waves-effect waves-light modal-trigger"
-                  >View Project</a
-                >
-              </p>
+              <a href="#rps" class="btn waves-effect waves-light modal-trigger"
+                >View Project</a
+              >
+              <ul id="rps-menu" class="dropdown-content">
+                <li class="green">
+                  <a href="#!" class="white-text">Version 1</a>
+                </li>
+                <li class="green">
+                  <a href="#!" class="white-text">Version 2</a>
+                </li>
+                <li class="green">
+                  <a href="#!" class="white-text">Version 3</a>
+                </li>
+              </ul>
+              <a
+                class="dropdown-trigger btn green white-text"
+                href="#"
+                data-activates="rps-menu"
+                >Live Demo</a
+              >
             </div>
           </div>
           <div class="col m6">
@@ -545,7 +558,6 @@
             I started with a very basic version of the game, then added more
             graphics and features like a score count and a score tally.
           </p>
-
           <img
             src="img/gallery/rps/rps-ver1.png"
             alt="Rock Paper Scizzors version 1"
@@ -554,7 +566,7 @@
           <a
             href="/demos/rps/ver1/"
             class="btn green white-text waves-effect waves-light modal-trigger"
-            >Live Demo</a
+            >Demo: Version 1</a
           >
           <hr />
           <img
@@ -565,7 +577,7 @@
           <a
             href="/demos/rps/ver2/"
             class="btn green white-text waves-effect waves-light modal-trigger"
-            >Live Demo</a
+            >Demo: Version 2</a
           >
           <hr />
           <img
@@ -576,7 +588,7 @@
           <a
             href="/demos/rps/ver3/"
             class="btn green white-text waves-effect waves-light modal-trigger"
-            >Live Demo</a
+            >Demo: Version 3</a
           >
         </div>
         <div class="modal-footer"></div>
@@ -675,6 +687,9 @@
 
         // Init Modal
         $(".modal").modal();
+
+        // Init Dropdown
+        $(".dropdown-trigger").dropdown();
 
         // Scrollfire
         const options = [

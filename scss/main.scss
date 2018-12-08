@@ -26,7 +26,13 @@ body {
 .btn i {
   color: $off-black;
 }
+.dropdown-content li {
+  text-align: center;
 
+  a:hover {
+    background: #43a047;
+  }
+}
 // mobile nav
 nav .button-collapse {
   background: $secondary-color;
