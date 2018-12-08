@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+<!--
+    index.html file for Crystal Jade Chinese Resteraunt web page.
+    Written by James Farrugia of jimfarrugia.com
+    Planned Updates:
+    - Alert the user on form submission if the info isn't valid.
+-->
+<head>
+<meta charset="UTF-8">
+<title>Crystal Jade Chinese Resteraunt</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="http://code.jquery.com/jquery-latest.min.js"
+    type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+/*
+    Drop Down Functionality
+*/
+$(document).ready(function() {
+    // Hide elements with .hidden
+    $(".hidden").hide();
+    // when .toggle is clicked
+    $(".toggle").click(function () {
+        // if the next element is hidden
+        if ($(this).next().is(":hidden")) {
+            var $this = $(this);
+            // show the element (via slideDown)
+            $this.next().slideDown("fast");
+            $this.children('.arrow').addClass("down");
+            $this.children('.arrow').removeClass("up");
+            $this.children('a').addClass('down');
+        } else {
+            var $this = $(this);
+            // else hide it (via slideUp)
+            $this.next().slideUp("fast");
+            $this.children('.arrow').addClass("up");
+            $this.children('.arrow').removeClass("down");
+            $this.children('a').removeClass('down');
+        }
+    });
+    /*
+        Form Validation
+    */
+    var $name = $("#name");
+    var $email = $("#email");
+    var $subject = $("#subject");
+    var $msg = $("#message");
+    var $submit = $("#submit");
+    
+    function readyCheck() {
+        // if all fields are valid
+        if ($name.hasClass("valid") && $email.hasClass("valid") && $subject.hasClass("valid")){
+            // give submit button the class - ready
+            $("#submit").addClass("ready");
+            
+            $submit.attr("type","submit");
+        }
+        else {
+            // else remove all classes from submit button
+            $("#submit").removeClass();
+            $submit.attr("type","button");
+        }
+    }
+    
+    // When NAME field loses focus
+    $name.blur(function() {
+        // remove all classes
+        $name.removeClass();
+        // if less than 3 characters long
+        if ($name.val().length < 3) {
+            // add class - invalid
+            $name.addClass("invalid");
+        } else {
+            // else add class - valid
+            $name.addClass("valid");
+        }
+        readyCheck();
+    });
+    $email.blur(function() {
+        $email.removeClass();
+        // reg exp for validating email
+        var $filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if (!$filter.test($email.val())){
+            $email.addClass("invalid");
+        } else {
+            $email.addClass("valid");
+        }
+        readyCheck();
+    });
+    $subject.blur(function() {
+        $subject.removeClass();
+        // subject line can't be empty
+        if ($subject.val().length < 1) {
+            $subject.addClass("invalid");
+        } else {
+            $subject.addClass("valid");
+        }
+        readyCheck();
+    });
+    //
+    //
+    //
+    //
+    
+    $("input[type=button]").click(function() {
+        window.alert("Fill it in properly, dick.");
+    });
+    
+    //
+    //
+    //
+    //
+    //
+});
+</script>
+</head>
+
+<body>
+
+<header id="page-header">
+    <h1><span>Crystal Jade<br>Chinese Resteraunt</span></h1>
+</header>
+
+<!-- 
+    v Menu v
+-->
+<section id="menu">
+
+    <div class="row" id="specials">
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Lunch Specials</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li><em>11:30am - 2:30pm only (except Monday)</em></li>
+                    <li>Sweet and Sour Chicken Fritters with Fried Rice</li>
+                    <li>Sweet and Sour Pork with Fried Rice</li>
+                    <li>Braised Chicken Black Bean Sauce with Fried Rice</li>
+                    <li>Braised Chicken Almond or Cashew Nuts with Fried Rice</li>
+                    <li>Braised Beef Black Bean Sauce with Fried Rice</li>
+                    <li>Mongolian Beef with Fried Rice</li>
+                    <li>Curried Prawns with Fried Rice</li>
+                    <li>Curried Chicken with Fried Rice</li>
+                    <li>Sate Beef with Fried Rice</li>
+                    <li>Sweet and Sour Beef with Fried Rice</li>
+                    <li>Prawn Chow Mein</li>
+                    <li>Chicken Chow Mein</li>
+                    <li>Sate Chicken with Fried Rice</li>
+                    <li>Garlic Chicken with Fried Rice</li>
+                    <li>Garlic Beef with Fried Rice</li>
+                </ul>
+            </div><!-- end .hidden -->
+        </div><!-- end .col -->
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Chef's Suggestions</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Fillet Steak with Black Bean Sauce</li>
+                    <li>Fillet Steak with BBQ Sauce</li>
+                    <li>Fillet Steak with Plum Sauce</li>
+                    <li>Mongolian Lamb</li>
+                    <li>King Prawns with Pepper and Salt</li>
+                    <li>King Prawns with BBQ Sauce</li>
+                    <li>Fried Fillet Chicken with Lemon Sauce</li>
+                    <li>Scallops with BBQ Sauce</li>
+                    <li>Combination Seafood</li>
+                    <li>Honey Chicken</li>
+                    <li>Honey Prawn</li>
+                    <li>Fillet Steak with Special Sauce</li>
+                    <li>Fillet Steak with Sizzling Sauce</li>
+                    <li>Fillet Steak with Black Pepper Sauce</li>
+                    <li>Fillet Steak with Peking Sauce</li>
+                    <li>Fillet Steak with Hoisin Sauce</li>
+                    <li>Fillet Steak with Shanghai Sauce</li>
+                    <li>Rainbow Steak</li>
+                    <li>Steak with Hong Kong Sauce</li>
+                </ul>
+            </div><!-- end .hidden -->
+        </div><!-- end .col -->
+    </div><!-- end .row -->
+
+    <div class="row">
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Entrees</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Mixed Entrees<br><span>(1 King Prawn Cutlet, 1 Dim Sim and 2 Mini Rolls)</span></li>
+                    <li>Special Ham and Chicken Roll</li>
+                    <li>Chinese Dim Sim</li>
+                    <li>King Prawn Cutlets</li>
+                    <li>Mini Spring Roll (Half Dozen)</li>
+                    <li>King Prawn Fritter</li>
+                    <li>Scallops Fritter</li>
+                </ul>
+            </div><!-- end .hidden -->
+        </div><!-- end .col -->
+
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Appetisers</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Prawn Cocktail</li>
+                    <li>Crab Cocktail</li>
+                    <li>Seafood Cocktail</li>
+                </ul>
+            </div><!-- end .hidden -->
+        </div><!-- end .col -->
+
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Soup</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Crab Meat Sweet Corn Soup</li>
+                    <li>Special Soup</li>
+                    <li>Combination Soup</li>
+                    <li>Chicken Soup</li>
+                    <li>Short Soup</li>
+                    <li>Long Soup</li>
+                    <li>Chicken and Sweet Corn Soup</li>
+                    <li>Combination Long or Short Soup</li>
+                </ul>
+            </div><!-- end .hidden -->
+        </div><!-- end .col -->
+    </div><!-- end .row -->
+
+    <div class="row">
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Omelettes</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Plain Omelette</li>
+                    <li>Prawn Omelette</li>
+                    <li>Chicken Omelette</li>
+                    <li>Ham Omelette</li>
+                    <li>Combination Omelette</li>
+                    <li>BBQ Pork Omelette</li>
+                    <li>King Prawn Omelette</li>
+                </ul>
+            </div>
+        </div><!-- end .col -->
+
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Sweet and Sour</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Sweet and Sour Combination</li>
+                    <li>Sweet and Sour Pork</li>
+                    <li>Sweet and Sour Fried Short Soup</li>
+                    <li>Sweet and Sour Fish Cutlets</li>
+                    <li>Sweet and Sour Sliced Fish</li>
+                    <li>Sweet and Sour Chicken Fritters</li>
+                    <li>Sweet and Sour Chicken Cutlets</li>
+                    <li>Sweet and Sour King Prawns</li>
+                    <li>Sweet and Sour Sliced Chicken</li>
+                    <li>Sweet and Sour Sliced Beef</li>
+                </ul>
+            </div>
+        </div><!-- end .col -->
+
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Chow Mein, Chop Suey</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Braised Chicken Chow Mein</li>
+                    <li>Braised Beef Chow Mein</li>
+                    <li>Braised King Prawn Chow Mein</li>
+                    <li>Combination Chow Mein</li>
+                    <li>Chicken Chow Mein</li>
+                    <li>Prawn Chow Mein</li>
+                    <li>Scallop Chow Mein</li>
+                    <li>BBQ Pork Chow Mein</li>
+                    <li>Mixed Vegitables</li>
+                </ul>
+            </div>
+        </div><!-- end .col -->
+    </div><!-- end .row -->
+
+    <div class="row">    
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Prawns</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Braised Prawns with Almonds or Cashews</li>
+                    <li>Braised Prawns with Black Bean Sauce</li>
+                    <li>Braised Prawns with Young Corn</li>
+                    <li>Braised Prawns with Straw Mushrooms</li>
+                    <li>Braised Prawns with French Mushrooms</li>
+                    <li>Braised Prawns with Chilli Sauce</li>
+                    <li>Braised Prawns with Garlic and Chilli Sauce</li>
+                    <li>Braised Prawns Combination</li>
+                    <li>Curried King Prawns with Vegetables</li>
+                    <li>Braised Prawns with Plum Sauce</li>
+                    <li>Braised Prawns with Crab Meat Sauce</li>
+                    <li>Braised Prawns with Szechuan</li>
+                    <li>Braised Prawns with Vegetables</li>
+                    <li>Honey Garlic Chilli King Prawn</li>
+                </ul>
+            </div>
+        </div><!-- end .col -->
+
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Garlic and Sate</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Garlic Lamb</li>
+                    <li>Garlic Pork Fillet</li>
+                    <li>Garlic Seafood Combination</li>
+                    <li>Garlic King Prawns</li>
+                    <li>Garlic Combination</li>
+                    <li>Garlic Chicken</li>
+                    <li>Garlic Scallops</li>
+                    <li>Garlic Beef</li>
+                    <li>Sate Seafood Combination</li>
+                    <li>Sate King Prawns</li>
+                    <li>Sate Combination</li>
+                    <li>Sate Chicken</li>
+                    <li>Sate Scallops</li>
+                    <li>Sate Beef</li>
+                    <li>Sate Pork Fillet</li>
+                    <li>Sate Lamb</li>
+                </ul>
+            </div>
+        </div><!-- end .col -->
+
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Scallops</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Braised Scallops with French Mushrooms</li>
+                    <li>Braised Scallops with Straw Mushrooms</li>
+                    <li>Braised Scallops with Young Corn</li>
+                    <li>Braised Scallops with Black Bean Sauce</li>
+                    <li>Braised Scallops with Pineapple</li>
+                    <li>Braised Scallops with Ginger and Shallots</li>
+                    <li>Braised Scallops with Combination</li>
+                    <li>Braised Scallops with Almonds or Cashews</li>
+                    <li>Braised Scallops with Plum Sauce</li>
+                </ul>
+            </div>
+        </div><!-- end .col -->
+    </div><!-- end .row -->
+
+    <div class="row">    
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Chicken</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Braised Chicken with Almonds or Cashews</li>
+                    <li>Braised Chicken with Combination</li>
+                    <li>Braised Chicken with Black Bean Sauce</li>
+                    <li>Braised Chicken with Young Corn</li>
+                    <li>Braised Chicken with French Mushrooms</li>
+                    <li>Braised Chicken with Straw Mushrooms</li>
+                    <li>Braised Chicken with Plum Sauce</li>
+                    <li>Crispy Skin Chicken (1/2 Bird)</li>
+                    <li>Crispy Skin Chicken Sweet and Sour Sauce (with bone)</li>
+                    <li>Braised Chicken Chilli Sauce</li>
+                    <li>Crispy Skin Chicken Lemon Sauce (with bone)</li>
+                    <li>Braised Chicken Black Pepper Sauce</li>
+                    <li>Braised Chicken with Szechuan</li>
+                    <li>Rainbow Chicken</li>
+                    <li>Chicken Hong Kong Sauce</li>
+                    <li>Chicken Hoisin</li>
+                    <li>Honey Garlic Chilli Chicken</li>
+                </ul>
+            </div>
+        </div><!-- end .col -->
+
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Beef</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Braised Beef with Almonds or Cashews</li>
+                    <li>Braised Beef with French Mushrooms</li>
+                    <li>Braised Beef with Straw Mushrooms</li>
+                    <li>Braised Beef with Black Bean Sauce</li>
+                    <li>Braised Beef with Bean Shoots</li>
+                    <li>Braised Beef with Young Corn</li>
+                    <li>Braised Beef with Chilli Sauce</li>
+                    <li>Braised Beef with Oyster Sauce</li>
+                    <li>Braised Beef with Combination</li>
+                    <li>Braised Beef with Plum Sauce</li>
+                    <li>Braised Beef with Tomato Sauce</li>
+                    <li>Mongolian Beef</li>
+                    <li>Braised Beef Szechaun</li>
+                    <li>Rainbow Beef</li>
+                    <li>Beef with Hoisin Sauce</li>
+                    <li>Beef with Hong Kong Sauce</li>
+                </ul>
+            </div>
+        </div><!-- end .col -->
+
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Rice</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Fried Rice <span>(small / large)</span></li>
+                    <li>Special Fried Rice <span>(small / large)</span></li>
+                    <li>Combination Rice</li>
+                    <li>Curried Prawns and Rice</li>
+                    <li>Curried Chicken and Rice</li>
+                    <li>Curried Scallops and Rice</li>
+                    <li>Curried Beef and Rice</li>
+                    <li>Curried King Prawns and Rice</li>
+                    <li>Braised King Prawns and Rice</li>
+                    <li>Braised Chicken and Rice</li>
+                    <li>Braised Beef and Rice</li>
+                    <li>Boiled Rice</li>
+                    <li>Braised Beef Tomato Sauce and Rice</li>
+                    <li>Braised Chicken Tomato Sauce and Rice</li>
+                </ul>
+            </div>
+        </div><!-- end .col -->
+    </div><!-- end .row -->
+
+    <div class="row">    
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Pork</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Pork Fillet with BBQ Sauce</li>
+                    <li>Pork Ribs with Pepper and Salt</li>
+                    <li>Pork Ribs with Black Bean Sauce</li>
+                    <li>Pork Ribs with BBQ Sauce</li>
+                    <li>Pork Ribs with Plum Sauce</li>
+                    <li>Pork Ribs with Special Sauce</li>
+                    <li>Pork Fillet with Chilli Sauce</li>
+                    <li>Pork Fillet with Plum Sauce</li>
+                    <li>BBQ Pork with Plum Sauce</li>
+                    <li>Pork Fillet with Szechuan Sauce</li>
+                    <li>Pork Fillet with Hoisin Sauce</li>
+                    <li>Rainbow Pork Fillet</li>
+                    <li>Pork Fillet with Hong Kong Sauce</li>
+                </ul>
+            </div>
+        </div><!-- end .col -->
+
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Duck</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Chinese Style Roast Duck</li>
+                </ul>
+            </div>
+        </div><!-- end .col -->
+
+        <div class="col">
+            <h2 class="toggle"><a href="#!" onClick="addClass(this)">Australian Meals</a><span class="arrow up"></span></h2>
+            <div class="hidden">
+                <ul>
+                    <li>Fish and Chips</li>
+                    <li>Prawn Salad</li>
+                    <li>Ham Salad</li>
+                    <li>Fried Chicken and Chips</li>
+                    <li>Chicken Maryland</li>
+                    <li>Sliced Fish with Mushroom</li>
+                    <li>Deep Fried Sliced Fish with Pepper and Salt</li>
+                    <li>Squid Pepper and Salt</li>
+                </ul>
+            </div>
+        </div><!-- end .col -->
+    </div><!-- end .row -->
+
+</section><!-- end #menu -->
+<!--
+    ^ Menu ^
+-->
+<footer id="contact">
+    <div class="row">
+         
+        <div id="map" class="col">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6631.493275237354!2d150.78546172091674!3d-33.79304033993233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129013126df4d5%3A0xf017d68f9f32a90!2sSt+Clair+Shopping+Centre!5e0!3m2!1sen!2sau!4v1394861922689" width="310" height="310" frameborder="0" style="border:0"></iframe>
+        </div><!-- end #map .col -->
+         
+        <div class="col">
+            <h3>Crystal Jade<br>Chinese Restaurant</h3>
+            <h4>Address:</h4>
+            <p>
+                19 St Clair Shopping Center
+                <br>
+                <em>(next door to Blockbuster)</em>
+                <br>
+                Cnr. Bennett Road &amp; Endevour Ave.
+                <br>
+                Bennett Rd, St Clair NSW 2759
+            </p>
+            <h4>Opening Hours:</h4>
+            <table>
+                <tr>
+                    <td>Sunday - Wednesday:</td>
+                    <td>11:30am &nbsp; - &nbsp; 2:30pm</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>&nbsp;&nbsp;4:30pm &nbsp; - &nbsp; 9:00pm</td>
+                </tr>
+                <tr>
+                    <td>Thursday - Saturday:</td>
+                    <td>11:30am &nbsp; - &nbsp; 2:30pm</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>&nbsp;&nbsp;4:30pm &nbsp; - &nbsp; 10:00pm</td>
+                </tr>
+            </table>
+        </div><!-- end.col -->
+         
+        <div class="col">
+            <h4>Phone Us:</h4>
+            <p>(02) 9670 4288</p>
+            <h4>Email Us:</h4>
+            <form action="#">
+                <p><input type="text" name="name" id="name" placeholder="Name" data-validation="required"></p>
+                <p><input type="email" name="email" id="email" placeholder="Email" data-validation="required"></p>
+                <p><input type="text" name="subject" id="subject" placeholder="Subject" data-validation="required"></p>
+                <p><textarea rows="5" name="message" id="message" placeholder="Type your message..." wrap="off" data-validation="required"></textarea></p>
+                <p><input type="button" name="submit" id="submit" value="Send"></p>
+            </form>
+        </div><!-- end .col -->
+         
+    </div><!-- end .row -->
+</footer><!-- end #contact -->
+
+
+</body>
+</html>

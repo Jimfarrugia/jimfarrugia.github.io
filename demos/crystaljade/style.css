@@ -1,0 +1,268 @@
+/*******************************************************************
+    style.css file for Crystal Jade Chinese Resteraunt web page.
+    Written by James Farrugia of jimfarrugia.com
+*******************************************************************/
+/*
+    Eric Meyer's CSS Reset
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0;	padding: 0;	border: 0; font-size: 100%;	font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q {	quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table {	border-collapse: collapse; border-spacing: 0; }
+/*
+    General
+*/
+body {
+    font-family: Arial;
+    background: #2CC36B;
+    color: #ecf0f1;
+}
+em {
+    font-style: italic;
+}
+input, textarea { margin: 0; padding: 0; color: #ecf0f1; }
+a { color: #ecf0f1; }
+/*
+    Header
+*/
+#page-header {
+    text-align: center;
+    background: #2C3E50;
+}
+#page-header h1 {
+    background: url('logo.png') no-repeat;
+    height: 150px;
+    width: 556px;
+    margin: 0 auto;
+}
+#page-header h1 span { display: none; }
+/*
+    Grid
+*/
+.row {
+    width: 960px;
+    overflow: hidden;
+    margin: 20px auto 0;
+}
+.row .col {
+    float: left;
+}
+.row .col:nth-child(1) { /* Left Column */
+    width: 310px;
+    margin: 0 10px 0 0;
+}
+.row .col:nth-child(2) { /* Middle Column */
+    width: 300px;
+    margin: 0 10px;
+}
+.row .col:nth-child(3) { /* Right Column */
+    width: 310px;
+    margin: 0 0 0 10px;
+}
+/*
+    Menu
+*/
+#menu #specials .col {
+    width: 470px;
+    margin: 0;
+}
+#menu #specials .col:first-child {
+    margin-right: 20px;
+}
+#menu #specials .col:first-child li:first-child {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+/* Buttons */
+#menu h2 { position: relative; }
+#menu h2 a {
+    display: block;
+    background: #42D581;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: ease 0.2s;
+    text-shadow: 0px -1px 0 rgba(0,0,0,0.15); /* 50% black coming from the top */
+}
+#menu a:visited, #menu a:link {
+    background: #42D581;
+}
+#menu a:hover, #menu a:active {
+    background: #2ECC71;
+}
+#menu a.down {
+    background: #2ECC71;
+}
+#menu h2 .arrow {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    height: 8px;
+    width: 12px;
+    transition: ease 0.2s;
+}
+#menu h2 .arrow.up {
+    background: url('arrow-down.png');
+}
+#menu h2 .arrow.down {
+    background: url('arrow-up.png');
+}
+/* Inner Content */
+#menu .row .col div {
+    background: #26A85E;
+    padding: 20px;
+    border-radius: 0 0 4px 4px;
+    font-size: 14px;
+}
+#menu .row .col div span {
+    font-size: 11px;
+}
+#menu .row .col div li {
+    margin-bottom: 10px;
+}
+#menu .row .col div li:last-child {
+    margin: 0;
+}
+/*
+    Contact
+*/
+#contact {
+    margin: 20px 0 0;
+    background: #2C3E50;
+}
+#contact .row {
+    margin: 0 auto;
+    padding: 20px 0;
+}
+#contact #map {
+    width: 310px;
+    height: 310px;
+    background: none;
+}
+#contact h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 0 0 10px;
+}
+#contact h4 {
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+#contact .col h4:first-child {
+    margin: 0 0 10px;
+}
+#contact p, #contact table {
+    font-size: 14px;
+    line-height: 20px;
+}
+#contact td:first-child {
+    padding: 0 10px 0 0;
+}
+#contact tr:nth-child(2) td {
+    padding: 0 0 10px 0;
+}
+/* Email Form */
+#contact form p {
+    margin: 0 0 5px;
+}
+#contact form p:nth-child(4) {
+    margin: 0;
+}
+#contact input, textarea {
+    font-family: arial;
+    font-size: 15px;
+    width: 250px;
+    max-width: 250px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(52,73,94,0.5);
+    transition: ease 0.2s;
+}
+textarea { 
+    display: block; /* Height fix for chrome */
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+}
+#contact input:focus, textarea:focus {
+    background: rgba(52,73,94,1);
+}
+#contact #submit {
+    width: 260px;
+    max-width: 260px;
+    background: rgba(38,168,94,0.5);
+    height: 35px;
+    transition: ease 0.2s;
+    border-radius: 0 0 4px 4px;
+}
+#contact input#submit.ready {
+    background: rgba(38,168,94,0.8);
+}
+#contact input#submit:hover, #contact input#submit:focus { background: rgba(38,168,94,1); }
+/* Placeholder text */
+input::-webkit-input-placeholder {color: #ecf0f1; opacity: 0.6;}
+input:-moz-placeholder {color: #ecf0f1; opacity: 0.6;}
+input::-moz-placeholder {color: #ecf0f1; opacity: 0.6;}
+input:-ms-input-placeholder {color: #ecf0f1; opacity: 0.6;}
+textarea::-webkit-input-placeholder {color: #ecf0f1; opacity: 0.6;}
+textarea:-moz-placeholder {color: #ecf0f1; opacity: 0.6;}
+textarea::-moz-placeholder {color: #ecf0f1; opacity: 0.6;}
+textarea:-ms-input-placeholder {color: #ecf0f1; opacity: 0.6;}
+/*
+    Inline form validation
+*/
+#contact input.valid {
+    background: rgba(38,168,94,0.5);
+}
+#contact input.invalid {
+    background: rgba(231, 76, 60,0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
