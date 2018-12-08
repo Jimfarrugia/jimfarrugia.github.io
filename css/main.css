@@ -6890,6 +6890,8 @@ nav .button-collapse {
 
 .img-content {
   justify-content: center; }
+  .img-content .btn, .img-content .btn-large {
+    margin-bottom: 1rem; }
 
 .card-title {
   background: rgba(0, 0, 0, 0.5); }
