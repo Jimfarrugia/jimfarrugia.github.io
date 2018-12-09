@@ -6850,24 +6850,27 @@ body {
   .dropdown-content li a:hover {
     background: #43a047; }
 
+/*
 nav .button-collapse {
-  background: #ffeb3b;
-  color: rgba(0, 0, 0, 0.87);
+  background: $secondary-color;
+  color: $off-black;
   padding: 0 20px;
   margin: 0;
   transition: ease 0.3s;
   border-radius: 0 0 3px 3px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px; }
-  nav .button-collapse:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
+  &:hover {
     box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 5px;
-    color: rgba(0, 0, 0, 0.5); }
-
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
 .navbar-fixed ul {
-  background: #ffeb3b;
-  font-family: "Roboto Mono", monospace; }
-  .navbar-fixed ul li a {
-    color: rgba(0, 0, 0, 0.87); }
-
+  background: $secondary-color;
+  font-family: $mono;
+  li a {
+    color: $off-black;
+  }
+}*/
 .row-1,
 .row-2,
 .row-3,

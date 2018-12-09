@@ -28,12 +28,12 @@ body {
 }
 .dropdown-content li {
   text-align: center;
-
   a:hover {
     background: #43a047;
   }
 }
 // mobile nav
+/*
 nav .button-collapse {
   background: $secondary-color;
   color: $off-black;
@@ -53,8 +53,9 @@ nav .button-collapse {
   li a {
     color: $off-black;
   }
-}
+}*/
 
+// Remove opacity so rows can fade in with scrollfire.
 .row-1,
 .row-2,
 .row-3,
