@@ -112,7 +112,12 @@ body {
   background: $primary-color-dark;
   color: set-text-color($primary-color-dark);
   font-family: $monospace;
-
+  // Contact
+  .contact-nav {
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
   // Footer Links
   a,
   a:visited {

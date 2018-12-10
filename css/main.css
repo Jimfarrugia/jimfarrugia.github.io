@@ -6915,6 +6915,8 @@ body {
   background: #003f74;
   color: #fafafa;
   font-family: "Roboto Mono", monospace; }
+  .page-footer .contact-nav li {
+    margin-bottom: 0.5rem; }
   .page-footer a,
   .page-footer a:visited {
     color: #ffeb3b; }
