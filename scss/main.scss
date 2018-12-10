@@ -40,8 +40,8 @@ body {
     HEADER
 **********************/
 .main-header {
-  background: url(../img/blue-sheets.jpg) bottom center no-repeat;
-  color: #fafafa;
+  background: url(../img/blue-sheets.jpg) center/cover no-repeat;
+  color: $off-white;
   padding-bottom: 2rem;
   font-family: $monospace;
   #logo {
