@@ -59,7 +59,7 @@
 
   <body>
     <!-- Page Header -->
-    <header class="main-header">
+    <header class="main-header noJS">
       <!--
         // Hiding Navigation for now //
         <div class="navbar-fixed">
@@ -800,6 +800,9 @@
     <!-- Scripts -->
     <script>
       $(document).ready(function() {
+        // Remove .noJS class
+        $(".main-header").removeClass("noJS");
+
         // Init Sidenav
         $(".button-collapse").sideNav(); /* {edge: 'right'} */
 

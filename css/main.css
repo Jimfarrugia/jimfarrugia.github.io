@@ -6856,7 +6856,7 @@ body {
     HEADER
 **********************/
 .main-header {
-  background: url(../img/blue-sheets.jpg) bottom center no-repeat;
+  background: url(../img/blue-sheets.webp) bottom center no-repeat;
   background-size: stretch;
   color: #fafafa;
   padding-bottom: 2rem;
@@ -6868,6 +6868,8 @@ body {
     width: 360px;
     height: 126px;
     margin: 0 auto; }
+  .main-header.noJS {
+    background: url(../img/blue-sheets.jpg) bottom center no-repeat; }
 
 /**********************
     ROWS
