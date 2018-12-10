@@ -1,27 +1,22 @@
 @import "./materialize";
 
-// Vars
-$header-bg: url(../img/blue-sheets.jpg);
-$header-height: 300px;
-$body-bg: $primary-color;
-$mono: "Roboto Mono", monospace;
+// Fonts
+$monospace: "Roboto Mono", monospace;
 $sanserif: "Roboto", sans-serif;
+// Colors
 $off-black: rgba(0, 0, 0, 0.87);
+$off-white: #fafafa;
 
 // Text Color Function # (Set text color based on the background color)
 @function set-text-color($background) {
   @if (lightness($background) > 55) {
-    @return #000;
+    @return $off-black;
   } @else {
-    @return #fafafa;
+    @return $off-white;
   }
 }
 
-body {
-  background: $body-bg;
-  color: set-text-color($body-bg);
-  font-family: $mono;
-}
+// Buttons and dropdowns
 .btn,
 .btn i {
   color: $off-black;
@@ -32,7 +27,103 @@ body {
     background: #43a047;
   }
 }
-// mobile nav
+
+/**********************
+    BODY
+**********************/
+body {
+  background: $primary-color;
+  color: set-text-color($primary-color);
+}
+
+/**********************
+    HEADER
+**********************/
+.main-header {
+  background: url(../img/blue-sheets.jpg) bottom center no-repeat;
+  background-size: stretch;
+  color: #fafafa;
+  padding-bottom: 2rem;
+  font-family: $monospace;
+  #logo {
+    padding-top: 3rem;
+  }
+  #logo a {
+    display: block;
+    width: 360px;
+    height: 126px;
+    margin: 0 auto;
+  }
+}
+
+/**********************
+    ROWS
+**********************/
+// Remove opacity so rows can fade in with scrollfire.
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5 {
+  opacity: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*********************
+    MAIN-SECTION
+**********************/
+
+// CARDS
+.img-content {
+  justify-content: center;
+  .btn {
+    margin-bottom: 1rem;
+  }
+}
+.card-title {
+  background: rgba(0, 0, 0, 0.5);
+}
+.card-content {
+  color: $off-black;
+}
+
+// MODALS
+.modal {
+  background: $off-white;
+  color: set-text-color($off-white);
+  overflow: show;
+  h4 {
+    padding: 2rem 0 1rem;
+  }
+}
+
+/**********************
+    Footer
+**********************/
+.page-footer {
+  background: $primary-color-dark;
+  color: set-text-color($primary-color-dark);
+  font-family: $monospace;
+
+  // Footer Links
+  a,
+  a:visited {
+    color: $secondary-color;
+  }
+  a:active,
+  a:hover {
+    color: $off-white;
+  }
+
+  // Footer Copyright
+  .footer-copyright {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+// mobile nav - bring in with sidebar eventually
 /*
 nav .button-collapse {
   background: $secondary-color;
@@ -49,91 +140,8 @@ nav .button-collapse {
 }
 .navbar-fixed ul {
   background: $secondary-color;
-  font-family: $mono;
+  font-family: $monospace;
   li a {
     color: $off-black;
   }
 }*/
-
-// Remove opacity so rows can fade in with scrollfire.
-.row-1,
-.row-2,
-.row-3,
-.row-4,
-.row-5 {
-  opacity: 0;
-}
-.main-header {
-  background: $header-bg bottom center no-repeat;
-  background-size: stretch;
-  color: #fafafa;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  font-family: $mono;
-  #logo {
-    padding: 60px 0 30px;
-  }
-  #logo a {
-    display: block;
-    width: 360px;
-    height: 126px;
-    margin: 0 auto;
-  }
-}
-
-.section-main {
-  font-family: $sanserif;
-}
-.img-content {
-  justify-content: center;
-  .btn {
-    margin-bottom: 1rem;
-  }
-}
-.card-title {
-  background: rgba(0, 0, 0, 0.5);
-}
-.card-content {
-  color: $off-black;
-}
-
-.modal {
-  overflow: show;
-  background: #fafafa;
-  color: set-text-color(#fafafa);
-  font-family: $sanserif;
-  h4 {
-    padding: 2rem 0 1rem;
-  }
-}
-.page-footer {
-  background: $primary-color-dark;
-  color: set-text-color($primary-color);
-
-  a,
-  a:visited {
-    color: $secondary-color;
-  }
-  a:active,
-  a:hover {
-    color: #fff;
-  }
-  .footer-copyright {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
-    a,
-    a:visited {
-      color: rgba(0, 0, 0, 0.87);
-    }
-    a:active,
-    a:hover {
-      color: $primary-color-dark;
-    }
-    ul {
-      display: inline;
-    }
-    ul li {
-      display: inline-block;
-    }
-  }
-}

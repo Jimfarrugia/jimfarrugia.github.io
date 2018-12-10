@@ -6835,11 +6835,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   stroke-linecap: round;
   /*shape-rendering: crispEdges;*/ }
 
-body {
-  background: #0069c0;
-  color: #fafafa;
-  font-family: "Roboto Mono", monospace; }
-
 .btn, .btn-large,
 .btn i,
 .btn-large i {
@@ -6849,6 +6844,80 @@ body {
   text-align: center; }
   .dropdown-content li a:hover {
     background: #43a047; }
+
+/**********************
+    BODY
+**********************/
+body {
+  background: #0069c0;
+  color: #fafafa; }
+
+/**********************
+    HEADER
+**********************/
+.main-header {
+  background: url(../img/blue-sheets.jpg) bottom center no-repeat;
+  background-size: stretch;
+  color: #fafafa;
+  padding-bottom: 2rem;
+  font-family: "Roboto Mono", monospace; }
+  .main-header #logo {
+    padding-top: 3rem; }
+  .main-header #logo a {
+    display: block;
+    width: 360px;
+    height: 126px;
+    margin: 0 auto; }
+
+/**********************
+    ROWS
+**********************/
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5 {
+  opacity: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+/*********************
+    MAIN-SECTION
+**********************/
+.img-content {
+  justify-content: center; }
+  .img-content .btn, .img-content .btn-large {
+    margin-bottom: 1rem; }
+
+.card-title {
+  background: rgba(0, 0, 0, 0.5); }
+
+.card-content {
+  color: rgba(0, 0, 0, 0.87); }
+
+.modal {
+  background: #fafafa;
+  color: rgba(0, 0, 0, 0.87);
+  overflow: show; }
+  .modal h4 {
+    padding: 2rem 0 1rem; }
+
+/**********************
+    Footer
+**********************/
+.page-footer {
+  background: #003f74;
+  color: #fafafa;
+  font-family: "Roboto Mono", monospace; }
+  .page-footer a,
+  .page-footer a:visited {
+    color: #ffeb3b; }
+  .page-footer a:active,
+  .page-footer a:hover {
+    color: #fafafa; }
+  .page-footer .footer-copyright {
+    background: #ffeb3b;
+    color: rgba(0, 0, 0, 0.87); }
 
 /*
 nav .button-collapse {
@@ -6866,76 +6935,10 @@ nav .button-collapse {
 }
 .navbar-fixed ul {
   background: $secondary-color;
-  font-family: $mono;
+  font-family: $monospace;
   li a {
     color: $off-black;
   }
 }*/
-.row-1,
-.row-2,
-.row-3,
-.row-4,
-.row-5 {
-  opacity: 0; }
-
-.main-header {
-  background: url(../img/blue-sheets.jpg) bottom center no-repeat;
-  background-size: stretch;
-  color: #fafafa;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  font-family: "Roboto Mono", monospace; }
-  .main-header #logo {
-    padding: 60px 0 30px; }
-  .main-header #logo a {
-    display: block;
-    width: 360px;
-    height: 126px;
-    margin: 0 auto; }
-
-.section-main {
-  font-family: "Roboto", sans-serif; }
-
-.img-content {
-  justify-content: center; }
-  .img-content .btn, .img-content .btn-large {
-    margin-bottom: 1rem; }
-
-.card-title {
-  background: rgba(0, 0, 0, 0.5); }
-
-.card-content {
-  color: rgba(0, 0, 0, 0.87); }
-
-.modal {
-  overflow: show;
-  background: #fafafa;
-  color: #000;
-  font-family: "Roboto", sans-serif; }
-  .modal h4 {
-    padding: 2rem 0 1rem; }
-
-.page-footer {
-  background: #003f74;
-  color: #fafafa; }
-  .page-footer a,
-  .page-footer a:visited {
-    color: #ffeb3b; }
-  .page-footer a:active,
-  .page-footer a:hover {
-    color: #fff; }
-  .page-footer .footer-copyright {
-    background: #ffeb3b;
-    color: #000; }
-    .page-footer .footer-copyright a,
-    .page-footer .footer-copyright a:visited {
-      color: rgba(0, 0, 0, 0.87); }
-    .page-footer .footer-copyright a:active,
-    .page-footer .footer-copyright a:hover {
-      color: #003f74; }
-    .page-footer .footer-copyright ul {
-      display: inline; }
-    .page-footer .footer-copyright ul li {
-      display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */
