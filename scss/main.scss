@@ -40,8 +40,7 @@ body {
     HEADER
 **********************/
 .main-header {
-  background: url(../img/blue-sheets.webp) bottom center no-repeat;
-  background-size: stretch;
+  background: url(../img/blue-sheets.jpg) bottom center no-repeat;
   color: #fafafa;
   padding-bottom: 2rem;
   font-family: $monospace;
@@ -55,10 +54,6 @@ body {
     margin: 0 auto;
   }
 }
-.main-header.noJS {
-  background: url(../img/blue-sheets.jpg) bottom center no-repeat;
-}
-
 /**********************
     ROWS
 **********************/
