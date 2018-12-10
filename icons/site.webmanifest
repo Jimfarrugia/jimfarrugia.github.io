@@ -1,0 +1,19 @@
+{
+    "name": "Jim Farrugia's Portfolio",
+    "short_name": "Jim Farrugia's Portfolio",
+    "icons": [
+        {
+            "src": "/icons/android-chrome-192x192.png?v=lk9qzaGoO0",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/android-chrome-512x512.png?v=lk9qzaGoO0",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#0069c0",
+    "background_color": "#0069c0",
+    "display": "standalone"
+}
