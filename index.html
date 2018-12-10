@@ -95,7 +95,7 @@
     <section class="section section-main">
       <div class="container">
         <!-- Row 1 - Eliquid Data -->
-        <div class="row row-1">
+        <div class="row row-1 noJS">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>Eliquid Data</h3>
@@ -159,7 +159,7 @@
           </div>
         </div>
         <!-- Row 2 - On Tap -->
-        <div class="row row-2">
+        <div class="row row-2 noJS">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
@@ -215,7 +215,7 @@
           </div>
         </div>
         <!-- Row 3 - RPS -->
-        <div class="row row-3">
+        <div class="row row-3 noJS">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>"Rock, Paper, Scizzors!"</h3>
@@ -281,7 +281,7 @@
           </div>
         </div>
         <!-- Row 4 - Crystal Jade -->
-        <div class="row row-4">
+        <div class="row row-4 noJS">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
@@ -347,7 +347,7 @@
           </div>
         </div>
         <!-- Row 5 - ATC -->
-        <div class="row row-5">
+        <div class="row row-5 noJS">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>Australian Time Converter</h3>
@@ -801,7 +801,7 @@
     <script>
       $(document).ready(function() {
         // Remove .noJS class
-        $(".main-header").removeClass("noJS");
+        $(".main-header, .row").removeClass("noJS");
 
         // Init Sidenav
         $(".button-collapse").sideNav(); /* {edge: 'right'} */
