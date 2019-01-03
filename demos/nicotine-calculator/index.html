@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nicotine Calculator</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="section"><h2 class="center">Nicotine Calculator</h2></header>
+    <div class="container">
+      <!-- Molecule IMG -->
+      <div class="row section banner center-align">
+        <img
+          class="responsive-img"
+          src="molecule.svg"
+          alt="nicotine molecule"
+        />
+      </div>
+      <!-- Inputs -->
+      <div class="row">
+        <div class="input-field col s12 m4">
+          <input id="base-input" type="number" class="validate" value="100" />
+          <label for="base-input">Nicotine Base Strength (in mg)</label>
+        </div>
+        <div class="input-field col s12 m4">
+          <input id="target-input" type="number" class="validate" value="6" />
+          <label for="target-input">Target Strength (in mg)</label>
+        </div>
+        <div class="input-field col s12 m4">
+          <input id="amount-input" type="number" class="validate" value="30" />
+          <label for="amount-input">Batch Size (in mL)</label>
+        </div>
+      </div>
+      <!-- Text Columns -->
+      <div class="row section">
+        <div class="col s4">
+          <p>
+            <strong>Nicotine Base Strength</strong> refers to the high strength
+            nicotine base that you'll be mixing into your eliquid.
+          </p>
+        </div>
+        <div class="col s4">
+          <p>
+            <strong>Target Strength</strong> refers to the nicotine strength (in
+            mg) that you would like your eLiquid to be.
+          </p>
+        </div>
+        <div class="col s4">
+          <p>
+            <strong>Batch Size</strong> refers to the amount of eLiquid (in mL)
+            you will be mixing. If you are mixing a full bottle, enter the
+            bottle size.
+          </p>
+        </div>
+      </div>
+      <!-- Results output -->
+      <div class="row" id="result"></div>
+      <!-- Calculate BTN -->
+      <div class="row section center-align">
+        <button class="btn" id="calculate-btn">Calculate</button>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="section">
+      <p class="center">
+        <a href="https://jimfarrugia.com" alt="Jim Farrugia Portfolio"
+          >&copy 2019 Jim Farrugia</a
+        >
+      </p>
+    </footer>
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- My script -->
+    <script src="app.js"></script>
+  </body>
+</html>
