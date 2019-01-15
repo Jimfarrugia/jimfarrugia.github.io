@@ -74,8 +74,41 @@
     <!-- Main Section -->
     <section class="section section-main">
       <div class="container">
-        <!-- Row 1 - Nicotine Calculator -->
+        <!-- Row 1 - Javascript Calculator -->
         <div class="row row-1 noJS">
+          <div class="col m6 hide-on-small-only">
+            <div class="img-content">
+              <h3>Javascript Calculator</h3>
+              <p>I developed a calculator using only HTML, CSS and Javascript.</p>
+              <p>This is a front-end project I completed as part of the <a class="white-text" href="https://learn.freecodecamp.org/" title="freeCodeCamp.org">freeCodeCamp.org</a> curriculum.</p>
+              <p>I've always liked the layout of the built-in Windows 10 Calculator so I used the same layout here.</p>
+              <p>
+                <a href="#js-calculator" class="btn waves-effect waves-light modal-trigger">View Project</a>
+                <a href="/demos/js-calculator" class="btn green white-text waves-effect waves-light modal-trigger">Live Demo</a>
+              </p>
+            </div>
+          </div>
+          <div class="col m6">
+            <div class="card">
+              <div class="card-image">
+                <picture>
+                  <source srcset="img/aus-time-converter/thumb_aus-time-converter.webp" type="image/webp" />
+                  <source srcset="img/aus-time-converter/thumb_aus-time-converter.png" type="image/png" />
+                  <img src="img/aus-time-converter/thumb_aus-time-converter.png" alt="Australian Time Converter" />
+                </picture>
+                <span class="card-title">Javascript Calculator</span>
+                <a href="#atc" class="btn-floating btn-large halfway-fab waves-effect waves-light modal-trigger">
+                  <i class="material-icons">zoom_out_map</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p><em>HTML & CSS, Javascript</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row 2 - Nicotine Calculator -->
+        <div class="row row-2 noJS">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
@@ -110,8 +143,8 @@
             </div>
           </div>
         </div>
-        <!-- Row 2 - Eliquid Data -->
-        <div class="row row-2 noJS">
+        <!-- Row 3 - Eliquid Data -->
+        <div class="row row-3 noJS">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>Eliquid Data</h3>
@@ -174,8 +207,8 @@
             </div>
           </div>
         </div>
-        <!-- Row 3 - On Tap -->
-        <div class="row row-3 noJS">
+        <!-- Row 4 - On Tap -->
+        <div class="row row-4 noJS">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
@@ -230,8 +263,8 @@
             </div>
           </div>
         </div>
-        <!-- Row 4 - RPS -->
-        <div class="row row-4 noJS">
+        <!-- Row 5 - RPS -->
+        <div class="row row-5 noJS">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>"Rock, Paper, Scizzors!"</h3>
@@ -296,8 +329,8 @@
             </div>
           </div>
         </div>
-        <!-- Row 5 - Crystal Jade -->
-        <div class="row row-5 noJS">
+        <!-- Row 6 - Crystal Jade -->
+        <div class="row row-6 noJS">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
@@ -362,8 +395,8 @@
             </div>
           </div>
         </div>
-        <!-- Row 6 - ATC -->
-        <div class="row row-6 noJS">
+        <!-- Row 7 - ATC -->
+        <div class="row row-7 noJS">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>Australian Time Converter</h3>
@@ -473,8 +506,37 @@
         </div>
       </div>
     </footer>
-
-    <!-- Modal 1 - Nicotine Calculator -->
+    <!-- Modal 1 - Javascript Calculator -->
+    <div id="js-calculator" class="modal">
+      <div class="container">
+        <div class="modal-content">
+          <h2>Javascript Calculator</h2>
+          <p>
+            <em>HTML & CSS, Javascript</em>
+          </p>
+          <p>
+            I developed a calculator using only HTML, CSS and Javascript.  This is a front-end project I completed as part of the <a href="https://learn.freecodecamp.org/">freeCodeCamp.org</a> curriculum.  I've always liked the layout of the built-in Windows 10 Calculator so I used the same layout here.
+          </p>
+          <p>
+            <a href="demos/js-calculator/" class="btn green white-text waves-effect waves-light modal-trigger">Live
+              Demo</a>
+          </p>
+          <picture>
+            <source srcset="img/nicotine-calculator/nicotine-calculator-closed.webp" type="image/webp" />
+            <source srcset="img/nicotine-calculator/nicotine-calculator-closed.png" type="image/png" />
+            <img src="img/nicotine-calculator/nicotine-calculator-closed.png" alt="Nicotine Calculator Closed" class="responsive-img" />
+          </picture>
+          <hr />
+          <picture>
+            <source srcset="img/nicotine-calculator/nicotine-calculator-open.webp" type="image/webp" />
+            <source srcset="img/nicotine-calculator/nicotine-calculator-open.png" type="image/png" />
+            <img src="img/nicotine-calculator/nicotine-calculator-open.png" alt="Nicotine Calculator Open" class="responsive-img" />
+          </picture>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+    <!-- Modal 2 - Nicotine Calculator -->
     <div id="nicotine-calculator" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -505,7 +567,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 2 - Eliquid Data -->
+    <!-- Modal 3 - Eliquid Data -->
     <div id="eliquidData" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -552,7 +614,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 3 - On Tap -->
+    <!-- Modal 4 - On Tap -->
     <div id="ontap" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -661,7 +723,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 4 - RPS -->
+    <!-- Modal 5 - RPS -->
     <div id="rps" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -714,7 +776,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 5 - Crystal Jade -->
+    <!-- Modal 6 - Crystal Jade -->
     <div id="crystaljade" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -755,7 +817,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 6 - ATC -->
+    <!-- Modal 7 - ATC -->
     <div id="atc" class="modal">
       <div class="container">
         <div class="modal-content">
