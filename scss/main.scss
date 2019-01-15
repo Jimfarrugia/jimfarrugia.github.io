@@ -131,18 +131,17 @@ body {
 }
 
 // mobile nav - bring in with sidebar eventually
-/*
-nav .button-collapse {
+
+nav .sidenav-trigger {
   background: $secondary-color;
   color: $off-black;
-  padding: 0 20px;
+  padding: 0 15px;
   margin: 0;
   transition: ease 0.3s;
   border-radius: 0 0 3px 3px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 5px;
-    color: rgba(0, 0, 0, 0.5);
   }
 }
 .navbar-fixed ul {
@@ -151,4 +150,4 @@ nav .button-collapse {
   li a {
     color: $off-black;
   }
-}*/
+}

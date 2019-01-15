@@ -6923,26 +6923,21 @@ body {
     background: #ffeb3b;
     color: rgba(0, 0, 0, 0.87); }
 
-/*
-nav .button-collapse {
-  background: $secondary-color;
-  color: $off-black;
-  padding: 0 20px;
+nav .sidenav-trigger {
+  background: #ffeb3b;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 0 15px;
   margin: 0;
   transition: ease 0.3s;
   border-radius: 0 0 3px 3px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
-  &:hover {
-    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 5px;
-    color: rgba(0, 0, 0, 0.5);
-  }
-}
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px; }
+  nav .sidenav-trigger:hover {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 5px; }
+
 .navbar-fixed ul {
-  background: $secondary-color;
-  font-family: $monospace;
-  li a {
-    color: $off-black;
-  }
-}*/
+  background: #ffeb3b;
+  font-family: "Roboto Mono", monospace; }
+  .navbar-fixed ul li a {
+    color: rgba(0, 0, 0, 0.87); }
 
 /*# sourceMappingURL=main.css.map */

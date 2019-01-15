@@ -39,28 +39,26 @@
   <body>
     <!-- Page Header -->
     <header class="main-header">
-      <!--
-        // Hiding Navigation for now //
-        <div class="navbar-fixed">
-          <nav class="transparent z-depth-0">
-            <div class="nav-wrapper container">
-              <a
-                href="#"
-                data-activates="mobile-nav"
-                class="left button-collapse show-on-large"
-              >
-                <i class="material-icons">menu</i>
-              </a>
-            </div>
-          </nav>
-        </div>
-        <ul class="side-nav" id="mobile-nav">
-          <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      -->
+      <div class="navbar-fixed">
+        <nav class="transparent z-depth-0">
+          <div class="nav-wrapper container">
+            <a
+              href="#"
+              data-activates="mobile-nav"
+              class="right sidenav-trigger show-on-large"
+            >
+              <i class="material-icons">menu</i>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <ul class="side-nav" id="mobile-nav">
+        <li><a href="#!" class="sidenav-close">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
       <div id="logo">
         <a href="index.html" title="jimfarrugia.com">
           <img src="img/jflogo-white.svg" alt="JF" />
@@ -430,7 +428,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col l5 s12">
+          <div id="about" class="col l5 s12">
             <h5>Hi! I'm Jim.</h5>
             <p>
               I design and develop websites and web applications. I love
@@ -807,7 +805,9 @@
         $(".row").removeClass("noJS");
 
         // Init Sidenav
-        $(".button-collapse").sideNav(); /* {edge: 'right'} */
+        $(".sidenav-trigger").sideNav({
+          edge: 'right'
+        });
 
         // Init Modal
         $(".modal").modal();
