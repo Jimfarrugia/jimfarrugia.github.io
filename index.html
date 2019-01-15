@@ -864,10 +864,12 @@
         // Remove .noJS class
         $(".row").removeClass("noJS");
 
+        /*
         // Init Sidenav
         $(".sidenav-trigger").sideNav({
           edge: 'right'
         });
+        */
 
         // Init Modal
         $(".modal").modal();
@@ -893,22 +895,36 @@
           },
           {
             selector: ".row-3",
-            offset: 250,
+            offset: 200,
             callback: function(el) {
               Materialize.fadeInImage($(el));
             }
           },
           {
             selector: ".row-4",
-            offset: 275,
+            offset: 150,
             callback: function(el) {
               Materialize.fadeInImage($(el));
             }
           },
           {
             selector: ".row-5",
-            offset: 325,
+            offset: 150,
             callback: function(el) {
+              Materialize.fadeInImage($(el));
+            }
+          },
+          {
+            selector: ".row-6",
+            offset: 150,
+            callback: function (el) {
+              Materialize.fadeInImage($(el));
+            }
+          },
+          {
+            selector: ".row-7",
+            offset: 150,
+            callback: function (el) {
               Materialize.fadeInImage($(el));
             }
           }
