@@ -6877,7 +6877,8 @@ body {
 .row-4,
 .row-5,
 .row-6,
-.row-7 {
+.row-7,
+.row-8 {
   opacity: 0;
   margin-top: 2rem;
   margin-bottom: 2rem; }
@@ -6890,8 +6891,11 @@ body {
 **********************/
 .img-content {
   justify-content: center; }
+  .img-content a {
+    color: #bbdefb; }
   .img-content .btn, .img-content .btn-large {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.87); }
 
 .card-title {
   background: rgba(0, 0, 0, 0.5); }

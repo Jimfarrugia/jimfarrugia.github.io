@@ -74,13 +74,46 @@
     <!-- Main Section -->
     <section class="section section-main">
       <div class="container">
-        <!-- Row 1 - Javascript Calculator -->
+        <!-- Row 1 - Outside -->
         <div class="row row-1 noJS">
+          <div class="col m6">
+            <div class="card">
+              <div class="card-image">
+                <picture>
+                  <source srcset="img/outside/outside_open.webp" type="image/webp" />
+                  <source srcset="img/outside/outside_open.png" type="image/png" />
+                  <img src="img/outside/outside_open.png" alt="Outside - Weather Stats" />
+                </picture>
+                <span class="card-title">Outside</span>
+                <a href="#outside" class="btn-floating btn-large halfway-fab waves-effect waves-light modal-trigger">
+                  <i class="material-icons">zoom_out_map</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p><em>HTML & CSS, Javascript, Boostrap, ReactJS</em></p>
+              </div>
+            </div>
+          </div>
+          <div class="col m6 hide-on-small-only">
+            <div class="img-content">
+              <h3>Outside</h3>
+              <p>Outside is a single-page weather application I created using ReactJS.</p>
+              <p>I wanted to get my feet wet with React and also to utilize an external API to pull data from.  The app makes requests to the current weather API from <a href="https://openweathermap.org/api" title="OpenWeatherMap.org API">OpenWeatherMap.org</a> and displays relevant information to the user.</p>
+              <p>React feels like an extremely powerful tool to use and I'm eagre to dive into more projects after I get a deeper understanding of the fundamentals.</p>
+              <p>
+                <a href="#outside" class="btn waves-effect waves-light modal-trigger">View Project</a>
+                <a href="https://jimfarrugia.github.io/outside/" class="btn green white-text waves-effect waves-light modal-trigger">Live Demo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Row 2 - Javascript Calculator -->
+        <div class="row row-2 noJS">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>Javascript Calculator</h3>
               <p>I developed a calculator using only HTML, CSS and Javascript.</p>
-              <p>This is a project I completed as part of the <a class="white-text" href="https://learn.freecodecamp.org/" title="freeCodeCamp.org">freeCodeCamp.org</a> front-end libraries certification.</p>
+              <p>This is a project I completed as part of the <a href="https://learn.freecodecamp.org/" title="freeCodeCamp.org">freeCodeCamp.org</a> front-end libraries certification.</p>
               <p>I've always liked the layout of the built-in Windows 10 Calculator so I used the same layout here.</p>
               <p>
                 <a href="#js-calculator" class="btn waves-effect waves-light modal-trigger">View Project</a>
@@ -107,8 +140,8 @@
             </div>
           </div>
         </div>
-        <!-- Row 2 - Nicotine Calculator -->
-        <div class="row row-2 noJS">
+        <!-- Row 3 - Nicotine Calculator -->
+        <div class="row row-3 noJS">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
@@ -143,8 +176,8 @@
             </div>
           </div>
         </div>
-        <!-- Row 3 - Eliquid Data -->
-        <div class="row row-3 noJS">
+        <!-- Row 4 - Eliquid Data -->
+        <div class="row row-4 noJS">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>Eliquid Data</h3>
@@ -207,8 +240,8 @@
             </div>
           </div>
         </div>
-        <!-- Row 4 - On Tap -->
-        <div class="row row-4 noJS">
+        <!-- Row 5 - On Tap -->
+        <div class="row row-5 noJS">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
@@ -263,8 +296,8 @@
             </div>
           </div>
         </div>
-        <!-- Row 5 - RPS -->
-        <div class="row row-5 noJS">
+        <!-- Row 6 - RPS -->
+        <div class="row row-6 noJS">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>"Rock, Paper, Scizzors!"</h3>
@@ -329,8 +362,8 @@
             </div>
           </div>
         </div>
-        <!-- Row 6 - Crystal Jade -->
-        <div class="row row-6 noJS">
+        <!-- Row 7 - Crystal Jade -->
+        <div class="row row-7 noJS">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
@@ -395,8 +428,8 @@
             </div>
           </div>
         </div>
-        <!-- Row 7 - ATC -->
-        <div class="row row-7 noJS">
+        <!-- Row 8 - ATC -->
+        <div class="row row-8 noJS">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>Australian Time Converter</h3>
@@ -506,7 +539,44 @@
         </div>
       </div>
     </footer>
-    <!-- Modal 1 - Javascript Calculator -->
+    <!-- Modal 1 - Outside -->
+    <div id="outside" class="modal">
+      <div class="container">
+        <div class="modal-content">
+          <h2>Outside</h2>
+          <p>
+            <em>HTML & CSS, Bootstrap, Javascript, ReactJS</em>
+          </p>
+          <p>Outside is a single-page weather application I created using ReactJS.</p>
+          <p>I wanted to get my feet wet with React and also to utilize an external API to pull data from.  The app makes requests to the current weather API from <a href="https://openweathermap.org/api" title="OpenWeatherMap.org API">OpenWeatherMap.org</a> and displays relevant information to the user.</p>
+          <p>React feels like an extremely powerful tool to use and I'm eagre to dive into more projects after I get a deeper understanding of the fundamentals.</p>
+          <p>
+            <a href="https://jimfarrugia.github.io/outside/" class="btn green white-text waves-effect waves-light modal-trigger">
+              Live Demo
+            </a>
+          </p>
+          <picture>
+            <source srcset="img/outside/outside_closed.webp" type="image/webp" />
+            <source srcset="img/outside/outside_closed.png" type="image/png" />
+            <img src="img/outside/outside_closed.png" alt="Outside Form" class="responsive-img" />
+          </picture>
+          <hr />
+          <picture>
+            <source srcset="img/outside/outside_open.webp" type="image/webp" />
+            <source srcset="img/outside/outside_open.png" type="image/png" />
+            <img src="img/outside/outside_open.png" alt="Outside Weather Stats Display" class="responsive-img" />
+          </picture>
+          <hr />
+          <picture>
+            <source srcset="img/outside/outside_mobile.webp" type="image/webp" />
+            <source srcset="img/outside/outside_mobile.png" type="image/png" />
+            <img src="img/outside/outside_mobile.png" alt="Outside Weather Stats on Mobile" class="responsive-img" />
+          </picture>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+    <!-- Modal 2 - Javascript Calculator -->
     <div id="js-calculator" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -531,7 +601,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 2 - Nicotine Calculator -->
+    <!-- Modal 3 - Nicotine Calculator -->
     <div id="nicotine-calculator" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -562,7 +632,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 3 - Eliquid Data -->
+    <!-- Modal 4 - Eliquid Data -->
     <div id="eliquidData" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -609,7 +679,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 4 - On Tap -->
+    <!-- Modal 5 - On Tap -->
     <div id="ontap" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -718,7 +788,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 5 - RPS -->
+    <!-- Modal 6 - RPS -->
     <div id="rps" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -771,7 +841,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 6 - Crystal Jade -->
+    <!-- Modal 7 - Crystal Jade -->
     <div id="crystaljade" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -812,7 +882,7 @@
         <div class="modal-footer"></div>
       </div>
     </div>
-    <!-- Modal 7 - ATC -->
+    <!-- Modal 8 - ATC -->
     <div id="atc" class="modal">
       <div class="container">
         <div class="modal-content">
@@ -923,6 +993,13 @@
           },
           {
             selector: ".row-7",
+            offset: 150,
+            callback: function (el) {
+              Materialize.fadeInImage($(el));
+            }
+          },
+          {
+            selector: ".row-8",
             offset: 150,
             callback: function (el) {
               Materialize.fadeInImage($(el));
