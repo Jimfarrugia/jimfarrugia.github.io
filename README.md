@@ -50,7 +50,13 @@ I used different colours to give tasks categories such "planning", "feature" and
 
 pic of trello board
 
-#### Moodboard
+#### Colour Palette & Moodboard
+
+The primary blue and yellow colours of the website were inherited from version 1.0 however, I used Google's materical design colour palette tool to generate additional swatches as well as test for accessibility / legibility.
+
+pic of color palette
+
+[Colour Palette Export - Codepen](https://codepen.io/jimfarrugia/pen/XGxbML) (Examples of buttons and layouts).
 
 I created a moodboard with some various elements that I wanted to keep from the original design, and some more obscure references to the desired 'look and feel' of the design.
 
