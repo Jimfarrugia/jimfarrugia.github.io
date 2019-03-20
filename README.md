@@ -1,4 +1,4 @@
-# Jim Farrugia's Portfolio
+# Jim Farrugia's Portfolio v1.1.0
 
 #### Links: [Live Website](https://jimfarrugia.github.io) | [Github Repository](https://github.com/jimfarrugia/jimfarrugia.github.io)
 
@@ -38,7 +38,7 @@ Some stand-out features of the website:
 
 ## Design Process
 
-### Initial Planning
+#### Initial Planning
 
 Having limited time, one of the first things I did was write a [**Project Plan**](./docs/project_plan.pdf) and a [**Timeline**](./docs/project_timeline.pdf) for the project.
 
@@ -50,10 +50,18 @@ I used different colours to give tasks categories such "planning", "feature" and
 
 pic of trello board
 
-### Moodboard
+#### Moodboard
 
-### Wireframes
+I created a moodboard with some various elements that I wanted to keep from the original design, and some more obscure references to the desired 'look and feel' of the design.
 
-### Logo
+pic of moodboard
 
-### Usability Considerations
+#### Wireframes
+
+I drew wireframes for the layout on small and large screens. I also made some notes about things I wanted to include in the design. These came in handy from start to finish.
+
+pics of wireframes
+
+#### Logo
+
+#### Usability Considerations
