@@ -54,13 +54,13 @@ I used different colours to give tasks categories such "planning", "feature" and
 
 The primary blue and yellow colours of the website were inherited from version 1.0 however, I used Google's materical design colour palette tool to generate additional swatches as well as test for accessibility / legibility.
 
-pic of color palette
+![Portfolio Design Colour Palette](./docs/img/portfolio-colour-palette.png)
 
 [Colour Palette Export - Codepen](https://codepen.io/jimfarrugia/pen/XGxbML) (Examples of buttons and layouts).
 
-I created a moodboard with some various elements that I wanted to keep from the original design, and some more obscure references to the desired 'look and feel' of the design.
+I created a moodboard with some various elements that I wanted to keep from the original design, and some various references to the desired 'look and feel' of the design.
 
-pic of moodboard
+![Portfolio Design Mood Board](./docs/img/portfolio-moodboard.png)
 
 #### Wireframes
 
@@ -72,7 +72,9 @@ pics of wireframes
 
 I spent quite a while and went through a fair few iterations to come up with this logo last year.
 
-pics of logo
+![JF Logo on Grid](./docs/img/logo_blue-on-white-grid.png)
+
+![JF Logo - White on Blue](./docs/img/logo_white-on-blue.png)
 
 I like the look and feel of the logo. I designed it to synergize with the material design pattern I'd been planning to use in my portfolio. The logo was also designed with the goal of looking good in a wide variety of colours and on a wide variety of background colours.
 
