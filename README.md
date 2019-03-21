@@ -40,7 +40,7 @@ Some stand-out features of the website:
 
 #### Initial Planning
 
-Having limited time, one of the first things I did was write a [**Project Plan**](./docs/project_plan.pdf) and a [**Timeline**](./docs/project_timeline.pdf) for the project.
+Having limited time, one of the first things I did was write a [**Project Plan**](./docs/project-plan.pdf) and a [**Timeline**](./docs/project-timeline.pdf) for the project.
 
 I scoped out requirements, core features and stretch goals. Then I broke up requirements and goals into tasks and put those tasks on a Trello board.
 
@@ -48,7 +48,7 @@ I scoped out requirements, core features and stretch goals. Then I broke up requ
 
 I used different colours to give tasks categories such "planning", "feature" and "documentation". I also used Trello to enter and keep track of due-dates for individual tasks so I wouldn't need to refer to the timeline document as much as I was in my previous project.
 
-![Trello Board with Due Dates](./docs/img/portfolio-trello-duedates.png)
+![Trello Board with Due-Dates](./docs/img/portfolio-trello-duedates.png)
 
 #### Colour Palette & Moodboard
 
