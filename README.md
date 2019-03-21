@@ -70,6 +70,12 @@ pics of wireframes
 
 #### Logo
 
+I spent quite a while and went through a fair few iterations to come up with this logo last year.
+
+pics of logo
+
+I like the look and feel of the logo. I designed it to synergize with the material design pattern I'd been planning to use in my portfolio. The logo was also designed with the goal of looking good in a wide variety of colours and on a wide variety of background colours.
+
 #### Usability Considerations
 
 ---
