@@ -40,7 +40,7 @@ Some stand-out features of the website:
 
 #### Initial Planning
 
-Having limited time, one of the first things I did was write a [**Project Plan**](./docs/project-plan.pdf) and a [**Timeline**](./docs/project-timeline.pdf) for the project.
+Having limited time, one of the first things I did was write a [**Project Plan**](./docs/portfolio-project-plan.pdf) and a [**Timeline**](./docs/portfolio-project-timeline.pdf) for the project.
 
 I scoped out requirements, core features and stretch goals. Then I broke up requirements and goals into tasks and put those tasks on a Trello board.
 
