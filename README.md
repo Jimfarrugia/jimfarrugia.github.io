@@ -44,11 +44,11 @@ Having limited time, one of the first things I did was write a [**Project Plan**
 
 I scoped out requirements, core features and stretch goals. Then I broke up requirements and goals into tasks and put those tasks on a Trello board.
 
-pic of trello board
+![Trello Board with Colour Categories](./docs/img/portfolio-trello-categories.png)
 
 I used different colours to give tasks categories such "planning", "feature" and "documentation". I also used Trello to enter and keep track of due-dates for individual tasks so I wouldn't need to refer to the timeline document as much as I was in my previous project.
 
-pic of trello board
+![Trello Board with Due Dates](./docs/img/portfolio-trello-duedates.png)
 
 #### Colour Palette & Moodboard
 
