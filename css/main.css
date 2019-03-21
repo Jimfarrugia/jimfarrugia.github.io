@@ -8651,4 +8651,8 @@ nav .sidenav-trigger:hover {
   color: rgba(0, 0, 0, 0.87);
 }
 
+.side-nav .user-view {
+  background: url("../img/blue-sheets.jpg") no-repeat center;
+}
+
 /*# sourceMappingURL=main.css.map */
