@@ -160,7 +160,27 @@ nav .sidenav-trigger {
 }
 .side-nav .user-view {
   background: url("../img/blue-sheets.jpg") no-repeat center;
+  padding-bottom: 10px;
+  p {
+    margin: 0 0 10px;
+    line-height: normal;
+  }
   .name {
-    padding-left: 33px;
+    font-size: 1.15rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .circle {
+    margin: 0 auto 10px;
+  }
+}
+.side-nav .collapsible-header {
+  padding: 0 0 0 32px;
+}
+.side-nav .collapsible-body {
+  background: $secondary-color;
+  span {
+    margin-left: 16px;
   }
 }
