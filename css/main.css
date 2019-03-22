@@ -8698,6 +8698,18 @@ nav .sidenav-trigger:hover {
   background: url("../icons/contact/github-logo.svg");
   background-size: 25px;
 }
+.side-nav .contact-link .icon.linkedin {
+  background: url("../icons/contact/linkedin-logo.svg");
+  background-size: 25px;
+}
+.side-nav .contact-link .icon.twitter {
+  background: url("../icons/contact/twitter-logo.svg");
+  background-size: 25px;
+}
+.side-nav .contact-link .icon.github {
+  background: url("../icons/contact/github-logo.svg");
+  background-size: 25px;
+}
 .side-nav .first-contact-link {
   margin-top: 25px;
 }
