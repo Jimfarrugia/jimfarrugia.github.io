@@ -8686,6 +8686,14 @@ nav .sidenav-trigger:hover {
 .side-nav .contact-link .material-icons {
   margin: 0 16px 0 32px;
 }
+.side-nav .contact-link .icon {
+  background: #000;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 34px;
+}
 .side-nav .first-contact-link {
   margin-top: 25px;
 }
