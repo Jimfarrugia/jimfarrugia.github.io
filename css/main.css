@@ -8661,6 +8661,10 @@ img-content > p {
 #contact a:hover {
   color: rgba(0, 0, 0, 0.7);
 }
+#contact a:active i,
+#contact a:hover i {
+  color: rgba(0, 0, 0, 0.87);
+}
 #contact td {
   width: 50%;
 }

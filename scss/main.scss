@@ -158,6 +158,9 @@ img-content > p {
   a:active,
   a:hover {
     color: rgba(0, 0, 0, 0.7);
+    i {
+      color: $off-black;
+    }
   }
   td {
     width: 50%;
@@ -169,6 +172,7 @@ img-content > p {
     vertical-align: middle;
     margin-right: 10px;
   }
+
   .icon.twitter {
     background: url("../icons/contact/twitter-logo.svg");
     background-size: 25px;
