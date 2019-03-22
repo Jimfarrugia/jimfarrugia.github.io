@@ -34,8 +34,15 @@ $off-white: #fafafa;
 body {
   background: $primary-color;
   color: set-text-color($primary-color);
+  /* Below is for sticky footer */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-
+/* Below is for sticky footer */
+.section-main {
+  flex: 1 0 auto;
+}
 /**********************
     HEADER
 **********************/
@@ -45,7 +52,7 @@ body {
   background-position: -175px 0;
   background-size: cover;
   color: $off-white;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   font-family: $monospace;
   h2,
   h5 {
@@ -85,12 +92,12 @@ body {
 /*********************
     MAIN-SECTION
 **********************/
-
-// CARDS
-.img-content {
-  justify-content: center;
-  h3 {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+.section-main {
+  img.circle {
+    max-height: 250px;
+    margin-top: 2rem;
+    border: 5px solid $off-white;
+    box-shadow: 1px 1px 3px $off-black;
   }
   a:link,
   a:visited {
@@ -99,6 +106,23 @@ body {
   a:active,
   a:hover {
     color: $off-white;
+  }
+}
+.section-main#about-page {
+  padding: 2rem 0;
+  h3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 1.65;
+  }
+}
+// CARDS
+.img-content {
+  justify-content: center;
+  h3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
   a.btn {
     margin-bottom: 1rem;
