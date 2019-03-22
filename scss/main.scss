@@ -143,28 +143,25 @@ img-content > p {
   }
 }
 /**********************
-    Footer
+    Contact Section
 **********************/
-.page-footer {
-  background: $primary-color-dark;
-  color: set-text-color($primary-color-dark);
+#contact {
+  background: $secondary-color;
+  color: $off-black;
   font-family: $monospace;
-  // Contact
-  .contact-nav {
-    li {
-      margin-bottom: 0.5rem;
-    }
-  }
-  // Footer Links
   a,
   a:visited {
-    color: $secondary-color;
+    color: $off-black;
   }
   a:active,
   a:hover {
-    color: $off-white;
+    color: rgba(0, 0, 0, 0.7);
   }
-
+}
+/**********************
+    Footer
+**********************/
+.page-footer {
   // Footer Copyright
   .footer-copyright {
     background: $secondary-color;
@@ -224,9 +221,9 @@ nav .sidenav-trigger {
     padding: 0;
     .material-icons {
       margin: 0 16px 0 32px;
+      color: $off-black;
     }
     .icon {
-      background: #000;
       width: 25px;
       height: 25px;
       display: inline-block;

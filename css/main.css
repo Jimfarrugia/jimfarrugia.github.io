@@ -8644,24 +8644,25 @@ img-content > p {
 }
 
 /**********************
-    Footer
+    Contact Section
 **********************/
-.page-footer {
-  background: #003f74;
-  color: #fafafa;
+#contact {
+  background: #ffeb3b;
+  color: rgba(0, 0, 0, 0.87);
   font-family: "Roboto Mono", monospace;
 }
-.page-footer .contact-nav li {
-  margin-bottom: 0.5rem;
+#contact a,
+#contact a:visited {
+  color: rgba(0, 0, 0, 0.87);
 }
-.page-footer a,
-.page-footer a:visited {
-  color: #ffeb3b;
+#contact a:active,
+#contact a:hover {
+  color: rgba(0, 0, 0, 0.7);
 }
-.page-footer a:active,
-.page-footer a:hover {
-  color: #fafafa;
-}
+
+/**********************
+    Footer
+**********************/
 .page-footer .footer-copyright {
   background: #ffeb3b;
   color: rgba(0, 0, 0, 0.87);
@@ -8722,9 +8723,9 @@ nav .sidenav-trigger:hover {
 }
 .side-nav .contact-link .material-icons {
   margin: 0 16px 0 32px;
+  color: rgba(0, 0, 0, 0.87);
 }
 .side-nav .contact-link .icon {
-  background: #000;
   width: 25px;
   height: 25px;
   display: inline-block;
