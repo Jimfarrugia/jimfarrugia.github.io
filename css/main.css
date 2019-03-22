@@ -8624,15 +8624,16 @@ img-content > p {
 #about {
   background: #003f74;
   color: #fafafa;
+  padding: 2rem 0;
 }
 #about h5 {
   font-family: "Roboto Mono", monospace;
-  margin: 2.5rem 0 2rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.87);
+  margin: 2rem 0;
 }
 #about img.circle {
   max-height: 300px;
-  margin-top: 25px;
+  margin-top: 2rem;
   border: 5px solid #ffeb3b;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.87);
 }
@@ -8644,23 +8645,69 @@ img-content > p {
 }
 
 /**********************
+    Contact Section
+**********************/
+#contact {
+  background: #ffeb3b;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Roboto Mono", monospace;
+  padding: 2rem 0;
+}
+#contact a,
+#contact a:visited {
+  color: rgba(0, 0, 0, 0.87);
+}
+#contact a:active,
+#contact a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+#contact a:active i,
+#contact a:hover i {
+  color: rgba(0, 0, 0, 0.87);
+}
+#contact td {
+  width: 50%;
+  padding-bottom: 10px;
+}
+#contact .row {
+  margin: 0;
+}
+#contact .icon {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+#contact .icon.twitter {
+  background: url("../icons/contact/twitter-logo.svg");
+  background-size: 25px;
+  margin-right: 8px;
+}
+#contact .icon.github {
+  background: url("../icons/contact/github-logo.svg");
+  background-size: 25px;
+}
+#contact .icon.linkedin {
+  background: url("../icons/contact/linkedin-logo.svg");
+  background-size: 22px;
+  width: 22px;
+  height: 22px;
+}
+#contact .icon.skype {
+  background: url("../icons/contact/skype-logo.svg");
+  background-size: 25px;
+}
+#contact .icon.medium {
+  background: url("../icons/contact/medium-size.svg");
+  background-size: 25px;
+}
+
+/**********************
     Footer
 **********************/
 .page-footer {
-  background: #003f74;
-  color: #fafafa;
-  font-family: "Roboto Mono", monospace;
-}
-.page-footer .contact-nav li {
-  margin-bottom: 0.5rem;
-}
-.page-footer a,
-.page-footer a:visited {
-  color: #ffeb3b;
-}
-.page-footer a:active,
-.page-footer a:hover {
-  color: #fafafa;
+  padding: 0;
 }
 .page-footer .footer-copyright {
   background: #ffeb3b;
@@ -8722,9 +8769,9 @@ nav .sidenav-trigger:hover {
 }
 .side-nav .contact-link .material-icons {
   margin: 0 16px 0 32px;
+  color: rgba(0, 0, 0, 0.87);
 }
 .side-nav .contact-link .icon {
-  background: #000;
   width: 25px;
   height: 25px;
   display: inline-block;
