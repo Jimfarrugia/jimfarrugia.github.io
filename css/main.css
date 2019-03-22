@@ -8554,7 +8554,7 @@ body {
   background-position: -175px 0;
   background-size: cover;
   color: #fafafa;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   font-family: "Roboto Mono", monospace;
 }
 .main-header h2,
@@ -8600,7 +8600,18 @@ body {
   border: 5px solid #fafafa;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.87);
 }
+.section-main a:link,
+.section-main a:visited {
+  color: #ffeb3b;
+}
+.section-main a:active,
+.section-main a:hover {
+  color: #fafafa;
+}
 
+.section-main#about-page {
+  padding: 2rem 0;
+}
 .section-main#about-page h3 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -8614,14 +8625,6 @@ body {
 }
 .img-content h3 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-.img-content a:link,
-.img-content a:visited {
-  color: #ffeb3b;
-}
-.img-content a:active,
-.img-content a:hover {
-  color: #fafafa;
 }
 .img-content a.btn, .img-content a.btn-large {
   margin-bottom: 1rem;
