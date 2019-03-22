@@ -8607,6 +8607,26 @@ body {
 }
 
 /**********************
+    About Section
+**********************/
+#about {
+  background: #003f74;
+  color: #fafafa;
+}
+#about a,
+#about a:visited {
+  color: #ffeb3b;
+}
+#about a:active,
+#about a:hover {
+  color: #fafafa;
+}
+#about h5 {
+  font-family: "Roboto Mono", monospace;
+  margin: 2.5rem 0 2rem;
+}
+
+/**********************
     Footer
 **********************/
 .page-footer {

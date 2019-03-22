@@ -108,6 +108,25 @@ body {
 }
 
 /**********************
+    About Section
+**********************/
+#about {
+  background: $primary-color-dark;
+  color: set-text-color($primary-color-dark);
+  a,
+  a:visited {
+    color: $secondary-color;
+  }
+  a:active,
+  a:hover {
+    color: $off-white;
+  }
+  h5 {
+    font-family: $monospace;
+    margin: 2.5rem 0 2rem;
+  }
+}
+/**********************
     Footer
 **********************/
 .page-footer {
