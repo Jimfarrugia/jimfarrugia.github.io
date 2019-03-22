@@ -62,7 +62,7 @@
       name="description"
       content="I design and develop websites and web applications. I love bringing ideas to life both visually and functionally."
     />
-    <title>Jim Farrugia's Portfolio</title>
+    <title>About Me - Jim Farrugia</title>
   </head>
 
   <body>
@@ -368,74 +368,6 @@
         $(".sidenav-trigger").sideNav({
           edge: "left"
         });
-
-        // Init Modal
-        $(".modal").modal();
-
-        // Init Dropdown
-        $(".dropdown-trigger").dropdown();
-
-        // Scrollfire Options
-        const options = [
-          {
-            selector: ".row-1",
-            offset: 50,
-            callback: function(el) {
-              Materialize.fadeInImage($(el));
-            }
-          },
-          {
-            selector: ".row-2",
-            offset: 200,
-            callback: function(el) {
-              Materialize.fadeInImage($(el));
-            }
-          },
-          {
-            selector: ".row-3",
-            offset: 200,
-            callback: function(el) {
-              Materialize.fadeInImage($(el));
-            }
-          },
-          {
-            selector: ".row-4",
-            offset: 150,
-            callback: function(el) {
-              Materialize.fadeInImage($(el));
-            }
-          },
-          {
-            selector: ".row-5",
-            offset: 150,
-            callback: function(el) {
-              Materialize.fadeInImage($(el));
-            }
-          },
-          {
-            selector: ".row-6",
-            offset: 150,
-            callback: function(el) {
-              Materialize.fadeInImage($(el));
-            }
-          },
-          {
-            selector: ".row-7",
-            offset: 150,
-            callback: function(el) {
-              Materialize.fadeInImage($(el));
-            }
-          },
-          {
-            selector: ".row-8",
-            offset: 150,
-            callback: function(el) {
-              Materialize.fadeInImage($(el));
-            }
-          }
-        ];
-        // Init Scrollfire
-        Materialize.scrollFire(options);
       });
     </script>
   </body>
