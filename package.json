@@ -1,0 +1,35 @@
+{
+  "name": "jimfarrugia.github.io",
+  "version": "1.0.0",
+  "description": "Jim Farrugia's Design & Development Portfolio",
+  "main": "index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "sass": "^1.17.3",
+    "compress-images": "^1.4.6"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jimfarrugia/jimfarrugia.github.io.git"
+  },
+  "keywords": [
+    "web",
+    "design",
+    "web",
+    "development",
+    "portfolio",
+    "developer",
+    "designer"
+  ],
+  "author": "Jim Farrugia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jimfarrugia/jimfarrugia.github.io/issues"
+  },
+  "homepage": "https://github.com/Jimfarrugia/jimfarrugia.github.io#readme"
+}
