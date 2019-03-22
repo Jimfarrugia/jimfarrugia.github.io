@@ -8630,6 +8630,9 @@ body {
   color: rgba(0, 0, 0, 0.87);
 }
 
+/**********************
+    Sidebar Nav
+**********************/
 nav .sidenav-trigger {
   background: #ffeb3b;
   color: rgba(0, 0, 0, 0.87);
@@ -8668,16 +8671,23 @@ nav .sidenav-trigger:hover {
 .side-nav .user-view .circle {
   margin: 0 auto 10px;
 }
-
 .side-nav .collapsible-header {
   padding: 0 0 0 32px;
 }
-
 .side-nav .collapsible-body {
   background: #ffeb3b;
 }
 .side-nav .collapsible-body span {
   margin-left: 16px;
+}
+.side-nav .contact-link {
+  padding: 0;
+}
+.side-nav .contact-link .material-icons {
+  margin: 0 16px 0 32px;
+}
+.side-nav .first-contact-link {
+  margin-top: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */

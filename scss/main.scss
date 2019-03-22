@@ -136,9 +136,9 @@ body {
     color: set-text-color($secondary-color);
   }
 }
-
-// mobile nav - bring in with sidebar eventually
-
+/**********************
+    Sidebar Nav
+**********************/
 nav .sidenav-trigger {
   background: $secondary-color;
   color: $off-black;
@@ -158,29 +158,40 @@ nav .sidenav-trigger {
     color: $off-black;
   }
 }
-.side-nav .user-view {
-  background: url("../img/blue-sheets.jpg") no-repeat center;
-  padding-bottom: 10px;
-  p {
-    margin: 0 0 10px;
-    line-height: normal;
+.side-nav {
+  .user-view {
+    background: url("../img/blue-sheets.jpg") no-repeat center;
+    padding-bottom: 10px;
+    p {
+      margin: 0 0 10px;
+      line-height: normal;
+    }
+    .name {
+      font-size: 1.15rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+    .circle {
+      margin: 0 auto 10px;
+    }
   }
-  .name {
-    font-size: 1.15rem;
+  .collapsible-header {
+    padding: 0 0 0 32px;
   }
-  .subtitle {
-    font-size: 1rem;
+  .collapsible-body {
+    background: $secondary-color;
+    span {
+      margin-left: 16px;
+    }
   }
-  .circle {
-    margin: 0 auto 10px;
+  .contact-link {
+    padding: 0;
+    .material-icons {
+      margin: 0 16px 0 32px;
+    }
   }
-}
-.side-nav .collapsible-header {
-  padding: 0 0 0 32px;
-}
-.side-nav .collapsible-body {
-  background: $secondary-color;
-  span {
-    margin-left: 16px;
+  .first-contact-link {
+    margin-top: 25px;
   }
 }
