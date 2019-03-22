@@ -113,17 +113,22 @@ body {
 #about {
   background: $primary-color-dark;
   color: set-text-color($primary-color-dark);
-  a,
-  a:visited {
-    color: $secondary-color;
-  }
-  a:active,
-  a:hover {
-    color: $off-white;
-  }
   h5 {
     font-family: $monospace;
     margin: 2.5rem 0 2rem;
+    text-shadow: 1px 1px 1px $off-black;
+  }
+  img.circle {
+    max-height: 300px;
+    margin-top: 25px;
+    border: 5px solid $secondary-color;
+    box-shadow: 1px 1px 3px $off-black;
+  }
+  img.circle:hover {
+    border-color: $off-white;
+  }
+  .btn {
+    margin-top: 10px;
   }
 }
 /**********************
