@@ -8667,6 +8667,10 @@ img-content > p {
 }
 #contact td {
   width: 50%;
+  padding-bottom: 10px;
+}
+#contact .row {
+  margin: 0;
 }
 #contact .icon {
   width: 25px;
