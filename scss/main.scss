@@ -124,14 +124,15 @@ img-content > p {
 #about {
   background: $primary-color-dark;
   color: set-text-color($primary-color-dark);
+  padding: 2rem 0;
   h5 {
     font-family: $monospace;
-    margin: 2.5rem 0 2rem;
     text-shadow: 1px 1px 1px $off-black;
+    margin: 2rem 0;
   }
   img.circle {
     max-height: 300px;
-    margin-top: 25px;
+    margin-top: 2rem;
     border: 5px solid $secondary-color;
     box-shadow: 1px 1px 3px $off-black;
   }
@@ -149,6 +150,7 @@ img-content > p {
   background: $secondary-color;
   color: $off-black;
   font-family: $monospace;
+  padding: 2rem 0;
   a,
   a:visited {
     color: $off-black;
@@ -157,7 +159,41 @@ img-content > p {
   a:hover {
     color: rgba(0, 0, 0, 0.7);
   }
+  td {
+    width: 50%;
+  }
+  .icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .icon.twitter {
+    background: url("../icons/contact/twitter-logo.svg");
+    background-size: 25px;
+    margin-right: 8px;
+  }
+  .icon.github {
+    background: url("../icons/contact/github-logo.svg");
+    background-size: 25px;
+  }
+  .icon.linkedin {
+    background: url("../icons/contact/linkedin-logo.svg");
+    background-size: 22px;
+    width: 22px;
+    height: 22px;
+  }
+  .icon.skype {
+    background: url("../icons/contact/skype-logo.svg");
+    background-size: 25px;
+  }
+  .icon.medium {
+    background: url("../icons/contact/medium-size.svg");
+    background-size: 25px;
+  }
 }
+
 /**********************
     Footer
 **********************/

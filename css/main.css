@@ -8624,15 +8624,16 @@ img-content > p {
 #about {
   background: #003f74;
   color: #fafafa;
+  padding: 2rem 0;
 }
 #about h5 {
   font-family: "Roboto Mono", monospace;
-  margin: 2.5rem 0 2rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.87);
+  margin: 2rem 0;
 }
 #about img.circle {
   max-height: 300px;
-  margin-top: 25px;
+  margin-top: 2rem;
   border: 5px solid #ffeb3b;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.87);
 }
@@ -8650,6 +8651,7 @@ img-content > p {
   background: #ffeb3b;
   color: rgba(0, 0, 0, 0.87);
   font-family: "Roboto Mono", monospace;
+  padding: 2rem 0;
 }
 #contact a,
 #contact a:visited {
@@ -8658,6 +8660,39 @@ img-content > p {
 #contact a:active,
 #contact a:hover {
   color: rgba(0, 0, 0, 0.7);
+}
+#contact td {
+  width: 50%;
+}
+#contact .icon {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+#contact .icon.twitter {
+  background: url("../icons/contact/twitter-logo.svg");
+  background-size: 25px;
+  margin-right: 8px;
+}
+#contact .icon.github {
+  background: url("../icons/contact/github-logo.svg");
+  background-size: 25px;
+}
+#contact .icon.linkedin {
+  background: url("../icons/contact/linkedin-logo.svg");
+  background-size: 22px;
+  width: 22px;
+  height: 22px;
+}
+#contact .icon.skype {
+  background: url("../icons/contact/skype-logo.svg");
+  background-size: 25px;
+}
+#contact .icon.medium {
+  background: url("../icons/contact/medium-size.svg");
+  background-size: 25px;
 }
 
 /**********************
