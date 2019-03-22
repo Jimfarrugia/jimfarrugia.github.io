@@ -8706,6 +8706,9 @@ img-content > p {
 /**********************
     Footer
 **********************/
+.page-footer {
+  padding: 0;
+}
 .page-footer .footer-copyright {
   background: #ffeb3b;
   color: rgba(0, 0, 0, 0.87);
