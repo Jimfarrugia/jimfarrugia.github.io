@@ -8706,8 +8706,8 @@ nav .sidenav-trigger:hover {
   background: url("../icons/contact/twitter-logo.svg");
   background-size: 25px;
 }
-.side-nav .contact-link .icon.github {
-  background: url("../icons/contact/github-logo.svg");
+.side-nav .contact-link .icon.skype {
+  background: url("../icons/contact/skype-logo.svg");
   background-size: 25px;
 }
 .side-nav .first-contact-link {
