@@ -34,8 +34,15 @@ $off-white: #fafafa;
 body {
   background: $primary-color;
   color: set-text-color($primary-color);
+  /* Below is for sticky footer */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-
+/* Below is for sticky footer */
+.section-main {
+  flex: 1 0 auto;
+}
 /**********************
     HEADER
 **********************/

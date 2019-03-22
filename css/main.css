@@ -8534,6 +8534,15 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 body {
   background: #0069c0;
   color: #fafafa;
+  /* Below is for sticky footer */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Below is for sticky footer */
+.section-main {
+  flex: 1 0 auto;
 }
 
 /**********************
