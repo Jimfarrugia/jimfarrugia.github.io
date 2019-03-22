@@ -8700,7 +8700,10 @@ nav .sidenav-trigger:hover {
 }
 .side-nav .contact-link .icon.linkedin {
   background: url("../icons/contact/linkedin-logo.svg");
-  background-size: 25px;
+  background-size: 22px;
+  width: 22px;
+  height: 22px;
+  margin: 0 10px 0 33px;
 }
 .side-nav .contact-link .icon.twitter {
   background: url("../icons/contact/twitter-logo.svg");
