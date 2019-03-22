@@ -40,7 +40,7 @@
 
   <body>
     <!-- Page Header -->
-    <header class="main-header">
+    <header class="main-header scrollspy" id="page-header">
       
       <!-- Sidebar Nav Toggle -->
       <div class="navbar-fixed">
@@ -62,7 +62,7 @@
         <ul class="side-nav" id="mobile-nav">
           <li>
             <div class="user-view center">
-              <a href="#user"><img class="circle" src="img/jflogo_onBlue_600px.png"></a>
+              <a href="#page-header"><img class="circle" src="img/jflogo_onBlue_600px.png"></a>
               <p class="name">Jim Farrugia</p>
               <p class="subtitle">Designer | Developer</p>
             </div>
@@ -76,14 +76,14 @@
                 <a class="collapsible-header">Portfolio<i class="material-icons right">arrow_drop_down</i></a>
                 <div class="collapsible-body">
                   <ul>
-                    <li><a href="#!"><span>Outside</span></a></li>
-                    <li><a href="#!"><span>Javascript Calculator</span></a></li>
-                    <li><a href="#!"><span>Nicotine Calculator</span></a></li>
-                    <li><a href="#!"><span>Eliquid Data</span></a></li>
-                    <li><a href="#!"><span>On Tap</span></a></li>
-                    <li><a href="#!"><span>Rock, Paper, Scizzors!</span></a></li>
-                    <li><a href="#!"><span>Crystal Jade</span></a></li>
-                    <li><a href="#!"><span>Australian Time Converter</span></a></li>
+                    <li><a href="#outside-row"><span>Outside</span></a></li>
+                    <li><a href="#jscalc-row"><span>Javascript Calculator</span></a></li>
+                    <li><a href="#niccalc-row"><span>Nicotine Calculator</span></a></li>
+                    <li><a href="#eliquiddata-row"><span>Eliquid Data</span></a></li>
+                    <li><a href="#ontap-row"><span>On Tap</span></a></li>
+                    <li><a href="#rps-row"><span>Rock, Paper, Scizzors!</span></a></li>
+                    <li><a href="#crystaljade-row"><span>Crystal Jade</span></a></li>
+                    <li><a href="#atc-row"><span>Australian Time Converter</span></a></li>
                   </ul>
                 </div>
               </li>
@@ -99,7 +99,7 @@
             <a href="history.html">History</a>
           </li>
           <li>
-            <a href="#!">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
           <li>
             <a href="mailto:contact@jimfarrugia.com" class="first-contact-link contact-link">
@@ -147,7 +147,7 @@
     <section class="section section-main">
       <div class="container">
         <!-- Row 1 - Outside -->
-        <div class="row row-1 noJS">
+        <div class="row row-1 scrollspy noJS" id="outside-row">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
@@ -180,7 +180,7 @@
           </div>
         </div>
         <!-- Row 2 - Javascript Calculator -->
-        <div class="row row-2 noJS">
+        <div class="row row-2 scrollspy noJS" id="jscalc-row">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>Javascript Calculator</h3>
@@ -213,7 +213,7 @@
           </div>
         </div>
         <!-- Row 3 - Nicotine Calculator -->
-        <div class="row row-3 noJS">
+        <div class="row row-3 scrollspy noJS" id="niccalc-row">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
@@ -249,7 +249,7 @@
           </div>
         </div>
         <!-- Row 4 - Eliquid Data -->
-        <div class="row row-4 noJS">
+        <div class="row row-4 scrollspy noJS" id="eliquiddata-row">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>Eliquid Data</h3>
@@ -313,7 +313,7 @@
           </div>
         </div>
         <!-- Row 5 - On Tap -->
-        <div class="row row-5 noJS">
+        <div class="row row-5 scrollspy noJS" id="ontap-row">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
@@ -369,7 +369,7 @@
           </div>
         </div>
         <!-- Row 6 - RPS -->
-        <div class="row row-6 noJS">
+        <div class="row row-6 scrollspy noJS" id="rps-row">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>"Rock, Paper, Scizzors!"</h3>
@@ -435,7 +435,7 @@
           </div>
         </div>
         <!-- Row 7 - Crystal Jade -->
-        <div class="row row-7 noJS">
+        <div class="row row-7 scrollspy noJS" id="crystaljade-row">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
@@ -501,7 +501,7 @@
           </div>
         </div>
         <!-- Row 8 - ATC -->
-        <div class="row row-8 noJS">
+        <div class="row row-8 scrollspy noJS" id="atc-row">
           <div class="col m6 hide-on-small-only">
             <div class="img-content">
               <h3>Australian Time Converter</h3>
@@ -593,7 +593,7 @@
 
     <!-- Page Footer -->
     <footer class="page-footer">
-      <section class="section" id="contact">
+      <section class="section scrollspy" id="contact">
         <div class="container">
           <table>
             <tr>
@@ -1047,8 +1047,10 @@
         $(".sidenav-trigger").sideNav({
           edge: 'left'
         });
-        
 
+        // Init scrollspy
+        $(".scrollspy").scrollSpy();
+        
         // Init Modal
         $(".modal").modal();
 
