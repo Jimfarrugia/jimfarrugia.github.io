@@ -8581,12 +8581,19 @@ body {
 .img-content {
   justify-content: center;
 }
+.img-content h3 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
 .img-content a {
   color: #bbdefb;
 }
 .img-content .btn, .img-content .btn-large {
   margin-bottom: 1rem;
   color: rgba(0, 0, 0, 0.87);
+}
+
+img-content > p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .card-title {
@@ -8604,6 +8611,31 @@ body {
 }
 .modal h4 {
   padding: 2rem 0 1rem;
+}
+
+/**********************
+    About Section
+**********************/
+#about {
+  background: #003f74;
+  color: #fafafa;
+}
+#about h5 {
+  font-family: "Roboto Mono", monospace;
+  margin: 2.5rem 0 2rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.87);
+}
+#about img.circle {
+  max-height: 300px;
+  margin-top: 25px;
+  border: 5px solid #ffeb3b;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.87);
+}
+#about img.circle:hover {
+  border-color: #fafafa;
+}
+#about .btn, #about .btn-large {
+  margin-top: 10px;
 }
 
 /**********************
