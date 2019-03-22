@@ -8584,10 +8584,15 @@ body {
 .img-content h3 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-.img-content a {
-  color: #bbdefb;
+.img-content a:link,
+.img-content a:visited {
+  color: #ffeb3b;
 }
-.img-content .btn, .img-content .btn-large {
+.img-content a:active,
+.img-content a:hover {
+  color: #fafafa;
+}
+.img-content a.btn, .img-content a.btn-large {
   margin-bottom: 1rem;
   color: rgba(0, 0, 0, 0.87);
 }
