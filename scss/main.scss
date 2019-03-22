@@ -40,10 +40,17 @@ body {
     HEADER
 **********************/
 .main-header {
-  background: url(../img/blue-sheets.jpg) center/cover no-repeat;
+  background: no-repeat url("../img/blue-sheets.jpg");
+  background-attachment: fixed;
+  background-position: -175px 0;
+  background-size: cover;
   color: $off-white;
   padding-bottom: 2rem;
   font-family: $monospace;
+  h2,
+  h5 {
+    text-shadow: 1px 1px 3px $off-black;
+  }
   #logo {
     padding-top: 3rem;
   }

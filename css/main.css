@@ -8540,10 +8540,17 @@ body {
     HEADER
 **********************/
 .main-header {
-  background: url(../img/blue-sheets.jpg) center/cover no-repeat;
+  background: no-repeat url("../img/blue-sheets.jpg");
+  background-attachment: fixed;
+  background-position: -175px 0;
+  background-size: cover;
   color: #fafafa;
   padding-bottom: 2rem;
   font-family: "Roboto Mono", monospace;
+}
+.main-header h2,
+.main-header h5 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.87);
 }
 .main-header #logo {
   padding-top: 3rem;
