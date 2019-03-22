@@ -8654,5 +8654,8 @@ nav .sidenav-trigger:hover {
 .side-nav .user-view {
   background: url("../img/blue-sheets.jpg") no-repeat center;
 }
+.side-nav .user-view .name {
+  padding-left: 33px;
+}
 
 /*# sourceMappingURL=main.css.map */
