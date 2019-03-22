@@ -192,11 +192,15 @@ nav .sidenav-trigger {
     }
     .icon {
       background: #000;
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
       display: inline-block;
       vertical-align: middle;
-      margin: 0 10px 0 34px;
+      margin: 0 8px 0 32px;
+    }
+    .icon.github {
+      background: url("../icons/contact/github-logo.svg");
+      background-size: 25px;
     }
   }
   .first-contact-link {

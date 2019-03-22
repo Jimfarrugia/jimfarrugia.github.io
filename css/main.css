@@ -8688,11 +8688,15 @@ nav .sidenav-trigger:hover {
 }
 .side-nav .contact-link .icon {
   background: #000;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   display: inline-block;
   vertical-align: middle;
-  margin: 0 10px 0 34px;
+  margin: 0 8px 0 32px;
+}
+.side-nav .contact-link .icon.github {
+  background: url("../icons/contact/github-logo.svg");
+  background-size: 25px;
 }
 .side-nav .first-contact-link {
   margin-top: 25px;
