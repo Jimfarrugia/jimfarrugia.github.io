@@ -40,7 +40,7 @@
 
   <body>
     <!-- Page Header -->
-    <header class="main-header" id="page-header">
+    <header class="main-header scrollspy" id="page-header">
       
       <!-- Sidebar Nav Toggle -->
       <div class="navbar-fixed">
@@ -593,7 +593,7 @@
 
     <!-- Page Footer -->
     <footer class="page-footer">
-      <section class="section" id="contact">
+      <section class="section scrollspy" id="contact">
         <div class="container">
           <table>
             <tr>
@@ -1047,8 +1047,10 @@
         $(".sidenav-trigger").sideNav({
           edge: 'left'
         });
-        
 
+        // Init scrollspy
+        $(".scrollspy").scrollSpy();
+        
         // Init Modal
         $(".modal").modal();
 

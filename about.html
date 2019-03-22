@@ -67,7 +67,7 @@
 
   <body>
     <!-- Page Header -->
-    <header class="main-header" id="page-header">
+    <header class="main-header scrollspy" id="page-header">
       <!-- Sidebar Nav Toggle -->
       <div class="navbar-fixed">
         <nav class="transparent z-depth-0">
@@ -241,7 +241,7 @@
     </section>
     <!-- Page Footer -->
     <footer class="page-footer">
-      <section class="section" id="contact">
+      <section class="section scrollspy" id="contact">
         <div class="container">
           <table>
             <tr>
@@ -324,6 +324,9 @@
       $(document).ready(function() {
         // Remove .noJS class
         $(".row").removeClass("noJS");
+
+        // Init scrollspy
+        $(".scrollspy").scrollSpy();
 
         // Init Sidenav
         $(".sidenav-trigger").sideNav({
