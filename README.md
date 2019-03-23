@@ -27,6 +27,34 @@ See also: XML Sitemap ([**sitemap.xml**](./docs/sitemap.xml))
 
 ### Screenshots
 
+Homepage on Small Screen:
+
+![Screenshot of Homepage on Mobile](./docs/img/screenshot-full-homepage-mobile.png)
+
+Slide-Out Sidebar Navigation:
+
+![Screenshot of Sidebar Navigation](./docs/img/screenshot-sidenav.png)
+
+Homepage Header on Larger Screen:
+
+![Screenshot of Homepage Header on Larger Screen](./docs/img/screenshot-home-header.png)
+
+Homepage Main-Content on Larger Screen:
+
+![Screenshot of Homepage Main-Content on Larger Screen](./docs/img/screenshot-home-main-content.png)
+
+Homepage About & Footer on Larger Screen:
+
+![Screenshot of Homepage About & Footer on Larger Screen](./docs/img/screenshot-home-about-and-footer.png)
+
+About Page on Larger Screen:
+
+![Screenshot of About Page on Larger Screen](./docs/img/screenshot-about-page.png)
+
+History Page on Larger Screen:
+
+![Screenshot of History Page on Larger Screen](./docs/img/screenshot-history-page.png)
+
 ### Tech Stack & Tools
 
 - **Project Managoement:** Trello, Google Drive, Google Docs
@@ -41,7 +69,7 @@ See also: XML Sitemap ([**sitemap.xml**](./docs/sitemap.xml))
 
 ## Design Process
 
-#### Initial Planning
+### Planning
 
 Having limited time, one of the first things I did was write a [**Project Plan**](./docs/portfolio-project-plan.pdf) and a [**Timeline**](./docs/portfolio-project-timeline.pdf) for the project.
 
@@ -53,7 +81,11 @@ I used different colours to give tasks categories such "planning", "feature" and
 
 ![Trello Board with Due-Dates](./docs/img/portfolio-trello-duedates.png)
 
-#### Colour Palette & Moodboard
+### User Stories
+
+![User Stories](./docs/img/portfolio-user-stories.png)
+
+### Colour Palette & Moodboard
 
 The primary blue and yellow colours of the website were inherited from version 1.0 however, I used Google's materical design colour palette tool to generate additional swatches as well as test for accessibility / legibility.
 
@@ -65,15 +97,20 @@ I created a moodboard with some various elements that I wanted to keep from the 
 
 ![Portfolio Design Mood Board](./docs/img/portfolio-moodboard.png)
 
-#### Wireframes
+### Wireframes
 
 I drew wireframes for the layout on small and large screens. I also made some notes about things I wanted to include in the design. These came in handy from start to finish.
 
 Small Screen Wireframes:
 
+![Small Screen Wireframes](./docs/img/wireframes_all-pages-small.jpg)
+
 Larger Screen Wireframes:
 
-#### Logo
+![Larger Screen Home & About Page Wireframes](./docs/img/wireframes_home-and-about-lrg.jpg)
+![Larger Screen History Page Wireframe](./docs/img/wireframes_history-page-lrg.jpg)
+
+### Logo
 
 I spent quite a while and went through a fair few iterations to come up with this logo last year.
 
@@ -83,9 +120,9 @@ I spent quite a while and went through a fair few iterations to come up with thi
 
 I like the look and feel of the logo. I designed it to synergize with the material design pattern I'd been planning to use in my portfolio. The logo was also designed with the goal of looking good in a wide variety of colours and on a wide variety of background colours.
 
-#### Usability Considerations
+### Usability Considerations
 
-####
+###
 
 ---
 
