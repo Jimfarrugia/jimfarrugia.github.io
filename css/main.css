@@ -8698,7 +8698,7 @@ body {
   font-family: "Roboto Mono", monospace;
   padding: 2rem 0;
 }
-#contact a,
+#contact a:link,
 #contact a:visited {
   color: rgba(0, 0, 0, 0.87);
 }
