@@ -21,6 +21,69 @@ Some stand-out features of the website:
 
 ### Sitemap
 
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://    www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://    www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/    0.9/sitemap.xsd">
+     <!--
+     created with Free Online Sitemap Generator www.xml-sitemaps.com
+    -->
+    <url>
+    <loc>https://jimfarrugia.github.io/</loc>
+    <lastmod>2019-03-23T06:36:59+00:00</lastmod>
+    <priority>1.00</priority>
+    </url>
+    <url>
+    <loc>https://jimfarrugia.github.io/index.html</loc>
+    <lastmod>2019-03-23T06:36:59+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://jimfarrugia.github.io/about.html</loc>
+    <lastmod>2019-03-23T06:36:59+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://jimfarrugia.github.io/history.html</loc>
+    <lastmod>2019-03-23T06:36:59+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://jimfarrugia.github.io/outside/</loc>
+    <lastmod>2019-01-23T22:15:33+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://jimfarrugia.github.io/demos/rps/ver1/</loc>
+    <lastmod>2019-03-23T06:36:59+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://jimfarrugia.github.io/demos/rps/ver2/</loc>
+    <lastmod>2019-03-23T06:36:59+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://jimfarrugia.github.io/demos/rps/ver3/</loc>
+    <lastmod>2019-03-23T06:36:59+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://jimfarrugia.github.io/demos/crystaljade/</loc>
+    <lastmod>2019-03-23T06:36:59+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://jimfarrugia.github.io/demos/js-calculator/</loc>
+    <lastmod>2019-03-23T06:36:59+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>
+    https://jimfarrugia.github.io/demos/nicotine-calculator/
+    </loc>
+    <lastmod>2019-03-23T06:36:59+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    </urlset>
+
 ### Screenshots
 
 ### Tech Stack & Tools
