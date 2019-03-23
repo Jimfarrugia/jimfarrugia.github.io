@@ -23,12 +23,11 @@ Some stand-out features of the website:
 
 ### Screenshots
 
-### Target Audience
-
 ### Tech Stack & Tools
 
 - **Project Managoement:** Trello, Google Drive, Google Docs
 - **Graphics:** Pixlr Online Photo Editor
+- **Fonts:** Roboto, Roboto Mono & Material Icons (all Google fonts)
 - **Source Control:** Git / Github
 - **IDE / Editor:** VS Code
 - **Front-End Stack:** HTML5, CSS3, SASS (CSS Preprocessor), Javascript
@@ -66,7 +65,9 @@ I created a moodboard with some various elements that I wanted to keep from the 
 
 I drew wireframes for the layout on small and large screens. I also made some notes about things I wanted to include in the design. These came in handy from start to finish.
 
-pics of wireframes
+Small Screen Wireframes:
+
+Larger Screen Wireframes:
 
 #### Logo
 
@@ -79,6 +80,8 @@ I spent quite a while and went through a fair few iterations to come up with thi
 I like the look and feel of the logo. I designed it to synergize with the material design pattern I'd been planning to use in my portfolio. The logo was also designed with the goal of looking good in a wide variety of colours and on a wide variety of background colours.
 
 #### Usability Considerations
+
+####
 
 ---
 
