@@ -31,6 +31,14 @@ Homepage on Small Screen:
 
 ![Screenshot of Homepage on Mobile](./docs/img/screenshot-full-homepage-mobile.png)
 
+About Page on Small Screen:
+
+![Screenshot of About Page on Mobile](./docs/img/screenshot-about-page-small.png)
+
+History Page on Small Screen:
+
+![Screenshot of History Page on Mobile](./docs/img/screenshot-history-page-small.png)
+
 Slide-Out Sidebar Navigation:
 
 ![Screenshot of Sidebar Navigation](./docs/img/screenshot-sidenav.png)
