@@ -130,6 +130,13 @@ I like the look and feel of the logo. I designed it to synergize with the materi
 
 ### Usability Considerations
 
+- Text should be legible throughout the entire website.
+  - Tested legibility of text on colours in website colour palette.
+  - Used SASS function to display light text colour on dark backgrounds and dark text colour on light backgrounds.
+- Sidebar / Navbar toggle should be obvious and intuitive to the user.
+  - Used bright secondary colour (yellow) to imply navigation throughout the website. Yellow is used to denote buttons and links, including the sidebar toggle button.
+  - Sidebar toggle button position is fixed and always accessible.
+
 ###
 
 ---
