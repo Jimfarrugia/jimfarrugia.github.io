@@ -137,16 +137,30 @@ I like the look and feel of the logo. I designed it to synergize with the materi
   - Used bright secondary colour (yellow) to imply navigation throughout the website. Yellow is used to denote buttons and links, including the sidebar toggle button.
   - Sidebar toggle button position is fixed and always accessible.
 
-###
-
 ---
 
 ##### Assessment Q&A
 
 Include short answers to the following questions:
 
-- Describe key events in the development of the internet from the 1980s to today (max. 150 words)
+1. Describe key events in the development of the internet from the 1980s to today (max. 150 words):
 
-- Define and describes the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers (max. 150 words)
+In 1983, TCP/IP became the standard for internet protocol and DNS was introduced to automatically assign IP addresses to domain names.
 
-- Reflect on one aspect of the development of internet technologies and how it hascontributed to the world today (max. 150 words)
+In 1990, A hypertext system is created by Tim Berners-Lee while working for CERN.
+
+On August 6th, 1991 CERN released the World Wide Web publicly.
+
+In 1994, Pizza Hut created the first internet ordering system.
+
+1996 saw the release of the first mobile phone with internet access.
+
+In 1999, wireless technology 802.11b (Wi-Fi) is standardized.
+
+The web quickly grew throughout the 2000s with more users getting online each day. By 2006, there were an estimated 92 million websites online and Google’s index reached 1 Trillion URLs in 2008.
+
+Today, 4 billion out of the 7 billion people on Earth are online and 5000 domain names are registered every hour. The internet and the web have grown immensely over time and show no signs of slowing down.
+
+2. Define and describes the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers (max. 150 words):
+
+3. Reflect on one aspect of the development of internet technologies and how it hascontributed to the world today (max. 150 words):
