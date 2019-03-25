@@ -141,11 +141,12 @@ I like the look and feel of the logo. I designed it to synergize with the materi
 
 ---
 
-##### Include short answers to the following questions,
+##### Assessment Q&A
 
-Describe key events in the development of the internet from the 1980s to today (max. 150 words)
+Include short answers to the following questions:
 
-Define and describes the relationship between fundamental aspects of the internet such as:
+- Describe key events in the development of the internet from the 1980s to today (max. 150 words)
 
-- domains, web servers, DNS, and web browsers (max. 150 words)
+- Define and describes the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers (max. 150 words)
+
 - Reflect on one aspect of the development of internet technologies and how it hascontributed to the world today (max. 150 words)
