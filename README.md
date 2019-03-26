@@ -169,4 +169,12 @@ Domains are aliases for IP addresses (eg. google.com) which are much easier for 
 
 **Reflect on one aspect of the development of internet technologies and how it has contributed to the world today (max. 150 words):**
 
-Mobile phones gaining internet-access capabilities in the late 90s - coupled with the standardization and iterative improvements of the 802.11 Wi-Fi standard - paved the way for a new way to interface with the web. With the widespread adoption of smartphones throughout the 2000s, the internet became more universal tool for many people; something they could quickly access from their pocket. So far, in this decade we've seen many apps enter the mobile space with the expressed goal of making a regular activity easier, more productive or more enjoyable. The internet has always been a powerful tool for sharing information. The way we interface with the web and take advantage of the technology available to us is ever-changing.
+Mobile phones gaining internet-access capabilities in the late 90s - coupled with the standardization and iterative improvements of the 802.11 Wi-Fi standard - paved the way for a new way to interface with the web.
+
+With the widespread adoption of smartphones throughout the 2000s, the internet became more universal tool for many people; something they could quickly access from their pocket.
+
+So far, in this decade we've seen many apps enter the mobile space with the expressed goal of making a regular activity easier, more productive or more enjoyable.
+
+The internet has always been a powerful tool for sharing information. The way we interface with the web and take advantage of the technology available to us is ever-changing.
+
+As the 'Internet of Things' (the extension of Internet connectivity into physical devices and everyday objects) grows, our concept for interfacing with the internet/web will continue to evolve.
