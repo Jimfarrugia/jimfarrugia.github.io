@@ -143,7 +143,7 @@ I like the look and feel of the logo. I designed it to synergize with the materi
 
 Include short answers to the following questions:
 
-1. Describe key events in the development of the internet from the 1980s to today (max. 150 words):
+**Describe key events in the development of the internet from the 1980s to today (max. 150 words):**
 
 In 1983, TCP/IP became the standard for internet protocol and DNS was introduced to automatically assign IP addresses to domain names.
 
@@ -161,6 +161,10 @@ The web quickly grew throughout the 2000s with more users getting online each da
 
 Today, 4 billion out of the 7 billion people on Earth are online and 5000 domain names are registered every hour. The internet and the web have grown immensely over time and show no signs of slowing down.
 
-2. Define and describes the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers (max. 150 words):
+**Define and describes the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers (max. 150 words):**
 
-3. Reflect on one aspect of the development of internet technologies and how it hascontributed to the world today (max. 150 words):
+Web browsers are software applications which we use to view websites. Websites and other online content are stored and served by web servers using hypertext transfer protocol (HTTP).
+
+Domains are aliases for IP addresses (eg. google.com) which are much easier for us remember than IP addresses. Domain Name Systems (DNS) is like a phonebook for the internet. DNS allows us to use domains to lookup websites without having to remember IP addresses.
+
+**Reflect on one aspect of the development of internet technologies and how it hascontributed to the world today (max. 150 words):**
