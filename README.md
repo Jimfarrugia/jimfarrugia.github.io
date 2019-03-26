@@ -167,4 +167,6 @@ Web browsers are software applications which we use to view websites. Websites a
 
 Domains are aliases for IP addresses (eg. google.com) which are much easier for us remember than IP addresses. Domain Name Systems (DNS) is like a phonebook for the internet. DNS allows us to use domains to lookup websites without having to remember IP addresses.
 
-**Reflect on one aspect of the development of internet technologies and how it hascontributed to the world today (max. 150 words):**
+**Reflect on one aspect of the development of internet technologies and how it has contributed to the world today (max. 150 words):**
+
+Mobile phones gaining internet-access capabilities in the late 90s - coupled with the standardization and iterative improvements of the 802.11 Wi-Fi standard - paved the way for a new way to interface with the web. With the widespread adoption of smartphones throughout the 2000s, the internet became more universal tool for many people; something they could quickly access from their pocket. So far, in this decade we've seen many apps enter the mobile space with the expressed goal of making a regular activity easier, more productive or more enjoyable. The internet has always been a powerful tool for sharing information. The way we interface with the web and take advantage of the technology available to us is ever-changing.
