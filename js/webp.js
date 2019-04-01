@@ -1,5 +1,5 @@
 /* 
-    Run 'node js/webp.js' to create .webp versions of images in /img/.
+    Move to root dir and Run 'node webp.js' to create .webp versions of images in /img/.
 */
 
 var imagemin = require("imagemin"), // The imagemin module.
